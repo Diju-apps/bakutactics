@@ -1,0 +1,1568 @@
+[
+  {
+    "name": "Aquos 30",
+    "type": "agc",
+    "attribute": "aquos",
+    "description": "Aquos Bakugan presente en la Tarjeta Puerta gana +30 G.",
+    "hsp": "250 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Aquos 50",
+    "type": "agc",
+    "attribute": "aquos",
+    "description": "Aquos Bakugan presente en la Tarjeta Puerta gana +50 G.",
+    "hsp": "500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Aquos 70",
+    "type": "agc",
+    "attribute": "aquos",
+    "description": "Aquos Bakugan presente en la Tarjeta Puerta gana +70 G.",
+    "hsp": "850 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Aquos 80",
+    "type": "agc",
+    "attribute": "aquos",
+    "description": "Aquos Bakugan presente en la Tarjeta Puerta gana +80 G.",
+    "hsp": "1,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Aquos 100",
+    "type": "agc",
+    "attribute": "aquos",
+    "description": "Aquos Bakugan presente en la Tarjeta Puerta gana +100 G.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Aquos 120",
+    "type": "agc",
+    "attribute": "aquos",
+    "description": "Aquos Bakugan presente en la Tarjeta Puerta gana +120 G.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Aquos 150",
+    "type": "agc",
+    "attribute": "aquos",
+    "description": "Aquos Bakugan presente en la Tarjeta Puerta gana +150 G.",
+    "hsp": "7,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Aquos 200",
+    "type": "agc",
+    "attribute": "aquos",
+    "description": "Aquos Bakugan presente en la Tarjeta Puerta gana +200 G.",
+    "hsp": "15,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus 30",
+    "type": "agc",
+    "attribute": "darkus",
+    "description": "Darkus Bakugan presente en la Tarjeta Puerta gana +30 G.",
+    "hsp": "250 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus 50",
+    "type": "agc",
+    "attribute": "darkus",
+    "description": "Darkus Bakugan presente en la Tarjeta Puerta gana +50 G.",
+    "hsp": "500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus 70",
+    "type": "agc",
+    "attribute": "darkus",
+    "description": "Darkus Bakugan presente en la Tarjeta Puerta gana +70 G.",
+    "hsp": "850 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus 80",
+    "type": "agc",
+    "attribute": "darkus",
+    "description": "Darkus Bakugan presente en la Tarjeta Puerta gana +80 G.",
+    "hsp": "1,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus 100",
+    "type": "agc",
+    "attribute": "darkus",
+    "description": "Darkus Bakugan presente en la Tarjeta Puerta gana +100 G.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus 120",
+    "type": "agc",
+    "attribute": "darkus",
+    "description": "Darkus Bakugan presente en la Tarjeta Puerta gana +120 G.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus 150",
+    "type": "agc",
+    "attribute": "darkus",
+    "description": "Darkus Bakugan presente en la Tarjeta Puerta gana +150 G.",
+    "hsp": "7,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus 200",
+    "type": "agc",
+    "attribute": "darkus",
+    "description": "Darkus Bakugan presente en la Tarjeta Puerta gana +200 G.",
+    "hsp": "15,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos 30",
+    "type": "agc",
+    "attribute": "haos",
+    "description": "Haos Bakugan presente en la Tarjeta Puerta gana +30 G.",
+    "hsp": "250 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos 50",
+    "type": "agc",
+    "attribute": "haos",
+    "description": "Haos Bakugan presente en la Tarjeta Puerta gana +50 G.",
+    "hsp": "500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos 70",
+    "type": "agc",
+    "attribute": "haos",
+    "description": "Haos Bakugan presente en la Tarjeta Puerta gana +70 G.",
+    "hsp": "850 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos 80",
+    "type": "agc",
+    "attribute": "haos",
+    "description": "Haos Bakugan presente en la Tarjeta Puerta gana +80 G.",
+    "hsp": "1,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos 100",
+    "type": "agc",
+    "attribute": "haos",
+    "description": "Haos Bakugan presente en la Tarjeta Puerta gana +100 G.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos 120",
+    "type": "agc",
+    "attribute": "haos",
+    "description": "Haos Bakugan presente en la Tarjeta Puerta gana +120 G.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos 150",
+    "type": "agc",
+    "attribute": "haos",
+    "description": "Haos Bakugan presente en la Tarjeta Puerta gana +150 G.",
+    "hsp": "7,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos 200",
+    "type": "agc",
+    "attribute": "haos",
+    "description": "Haos Bakugan presente en la Tarjeta Puerta gana +200 G.",
+    "hsp": "15,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pyrus 30",
+    "type": "agc",
+    "attribute": "pyrus",
+    "description": "Pyrus Bakugan presente en la Tarjeta Puerta gana +30 G.",
+    "hsp": "250 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pyrus 50",
+    "type": "agc",
+    "attribute": "pyrus",
+    "description": "Pyrus Bakugan presente en la Tarjeta Puerta gana +50 G.",
+    "hsp": "500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pyrus 70",
+    "type": "agc",
+    "attribute": "pyrus",
+    "description": "Pyrus Bakugan presente en la Tarjeta Puerta gana +70 G.",
+    "hsp": "850 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pyrus 80",
+    "type": "agc",
+    "attribute": "pyrus",
+    "description": "Pyrus Bakugan presente en la Tarjeta Puerta gana +80 G.",
+    "hsp": "1,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pyrus 100",
+    "type": "agc",
+    "attribute": "pyrus",
+    "description": "Pyrus Bakugan presente en la Tarjeta Puerta gana +100 G.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pyrus 120",
+    "type": "agc",
+    "attribute": "pyrus",
+    "description": "Pyrus Bakugan presente en la Tarjeta Puerta gana +120 G.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pyrus 150",
+    "type": "agc",
+    "attribute": "pyrus",
+    "description": "Pyrus Bakugan presente en la Tarjeta Puerta gana +150 G.",
+    "hsp": "7,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pyrus 200",
+    "type": "agc",
+    "attribute": "pyrus",
+    "description": "Pyrus Bakugan presente en la Tarjeta Puerta gana +200 G.",
+    "hsp": "15,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Subterra 30",
+    "type": "agc",
+    "attribute": "subterra",
+    "description": "Subterra Bakugan presente en la Tarjeta Puerta gana +30 G.",
+    "hsp": "250 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Subterra 50",
+    "type": "agc",
+    "attribute": "subterra",
+    "description": "Subterra Bakugan presente en la Tarjeta Puerta gana +50 G.",
+    "hsp": "500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Subterra 70",
+    "type": "agc",
+    "attribute": "subterra",
+    "description": "Subterra Bakugan presente en la Tarjeta Puerta gana +70 G.",
+    "hsp": "850 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Subterra 80",
+    "type": "agc",
+    "attribute": "subterra",
+    "description": "Subterra Bakugan presente en la Tarjeta Puerta gana +80 G.",
+    "hsp": "1,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Subterra 100",
+    "type": "agc",
+    "attribute": "subterra",
+    "description": "Subterra Bakugan presente en la Tarjeta Puerta gana +100 G.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Subterra 120",
+    "type": "agc",
+    "attribute": "subterra",
+    "description": "Subterra Bakugan presente en la Tarjeta Puerta gana +120 G.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Subterra 150",
+    "type": "agc",
+    "attribute": "subterra",
+    "description": "Subterra Bakugan presente en la Tarjeta Puerta gana +150 G.",
+    "hsp": "7,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Subterra 200",
+    "type": "agc",
+    "attribute": "subterra",
+    "description": "Subterra Bakugan presente en la Tarjeta Puerta gana +200 G.",
+    "hsp": "15,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Ventus 30",
+    "type": "agc",
+    "attribute": "ventus",
+    "description": "Ventus Bakugan presente en la Tarjeta Puerta gana +30 G.",
+    "hsp": "250 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Ventus 50",
+    "type": "agc",
+    "attribute": "ventus",
+    "description": "Ventus Bakugan presente en la Tarjeta Puerta gana +50 G.",
+    "hsp": "500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Ventus 70",
+    "type": "agc",
+    "attribute": "ventus",
+    "description": "Ventus Bakugan presente en la Tarjeta Puerta gana +70 G.",
+    "hsp": "850 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Ventus 80",
+    "type": "agc",
+    "attribute": "ventus",
+    "description": "Ventus Bakugan presente en la Tarjeta Puerta gana +80 G.",
+    "hsp": "1,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Ventus 100",
+    "type": "agc",
+    "attribute": "ventus",
+    "description": "Ventus Bakugan presente en la Tarjeta Puerta gana +100 G.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Ventus 120",
+    "type": "agc",
+    "attribute": "ventus",
+    "description": "Ventus Bakugan presente en la Tarjeta Puerta gana +120 G.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Ventus 150",
+    "type": "agc",
+    "attribute": "ventus",
+    "description": "Ventus Bakugan presente en la Tarjeta Puerta gana +150 G.",
+    "hsp": "7,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Ventus 200",
+    "type": "agc",
+    "attribute": "ventus",
+    "description": "Ventus Bakugan presente en la Tarjeta Puerta gana +200 G.",
+    "hsp": "15,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Androstatis",
+    "type": "cogc",
+    "description": "Todos los Bakugan derrotados en este turno reviven al comienzo del siguiente turno.",
+    "hsp": "5,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Aqua Merge",
+    "type": "cogc",
+    "description": "Todos los Bakugan que no sean Subterra en el campo tienen su atributo cambiado a Aquos.",
+    "hsp": "10,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Aquos Hazard",
+    "type": "cogc",
+    "description": "Todos los Bakugan en la Tarjeta Puerta se cambian a Aquos.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Battle Sham",
+    "type": "cogc",
+    "description": "Si solo hay dos Bakugan aliados en esta Carta Puerta, el Bakugan aliado con mayor poder G ataca a un Bakugan contrario aleatorio. (evita las pilas)",
+    "hsp": "9,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Darkus Hazard",
+    "type": "cogc",
+    "description": "Todos los Bakugan en la Tarjeta Puerta se cambian a Darkus.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Doom Card",
+    "type": "cogc",
+    "description": "Mientras esta Tarjeta Puerta está abierta, las Tarjetas de Habilidad Doom están habilitadas; Bakugan derrotado después de la activación de esta Tarjeta Puerta no se puede revivir.",
+    "hsp": "15,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Final Judgement",
+    "type": "cogc",
+    "description": "Si el atributo Bakugan del oponente no es equivalente al del propietario, sus G se convierten en 0 G inmediatamente.",
+    "hsp": "12,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Gate Card Close",
+    "type": "cogc",
+    "description": "Todos los Bakugan en el campo vuelven a estar a mano.",
+    "hsp": "4,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Grand Spirit",
+    "type": "cogc",
+    "description": "Tu Bakugan gana +50 G por cada Carta Puerta en el campo.",
+    "hsp": "5,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Haos Hazard",
+    "type": "cogc",
+    "description": "Todos los Bakugan en la Tarjeta Puerta se cambian a Haos.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Hyper Merge",
+    "type": "cogc",
+    "description": "Transfiere 100 G a cada uno de los Bakugan de tu equipo desde el Bakugan del oponente.",
+    "hsp": "6,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Intercept",
+    "type": "cogc",
+    "description": "El propietario de esta Tarjeta Puerta le agrega inmediatamente un Bakugan.",
+    "hsp": "12,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Joker's Wild",
+    "type": "cogc",
+    "description": "Darkus Bakugan gana incondicionalmente.",
+    "hsp": "10,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Level Down",
+    "type": "cogc",
+    "description": "Todos los Bakugan con 400 o más G en esta Tarjeta Puerta pierden 100 G.",
+    "hsp": "1,850 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Magma Fuse",
+    "type": "cogc",
+    "description": "Después de esta batalla, todas las Tarjetas Puerta en el campo son destruidas.",
+    "hsp": "17,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Mine Ghost",
+    "type": "cogc",
+    "description": "Cuando al menos dos Bakugan están presentes en esta Tarjeta Puerta, todos los Bakugan en esta Tarjeta Puerta son derrotados.",
+    "hsp": "10,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Negative Delta",
+    "type": "cogc",
+    "description": "Si el Bakugan del oponente es Darkus, Subterra o Ventus, pierde 200 G. De lo contrario, el Bakugan del usuario pierde 200 G.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Peacemaker",
+    "type": "cogc",
+    "description": "Todos los Bakugan de la Tarjeta Puerta se devuelven a las manos de sus propietarios.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Positive Delta",
+    "type": "cogc",
+    "description": "Si el Bakugan del oponente es Pyrus, Aquos o Haos, pierde 200 G. De lo contrario, el Bakugan del usuario pierde 200 G.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Pyrus Hazard",
+    "type": "cogc",
+    "description": "Todos los Bakugan en la Tarjeta Puerta se cambian a Pyrus.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Quartet Battle",
+    "type": "cogc",
+    "description": "Ambos equipos agregan Bakugan a la Tarjeta Puerta hasta que haya cuatro o más sobre ella.",
+    "hsp": "11,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Quicksand Freeze",
+    "type": "cogc",
+    "description": "El ganador de la batalla permanece en la Tarjeta Puerta y sus G se reducen a 0 G.",
+    "hsp": "8,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Reinforcement",
+    "type": "cogc",
+    "description": "Tu Bakugan gana +100 G por cada Bakugan con el mismo atributo en juego.",
+    "hsp": "5,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Reloaded",
+    "type": "cogc",
+    "description": "Tu Bakugan gana +100 G por cada uno de tus Bakugan en el campo de batalla.",
+    "hsp": "3,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Revive",
+    "type": "cogc",
+    "description": "El Bakugan del ganador de la batalla en esta Carta Puerta revive.",
+    "hsp": "15,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Subterra Hazard",
+    "type": "cogc",
+    "description": "Todos los Bakugan en la Tarjeta Puerta se cambian a Subterra.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Supernova",
+    "type": "cogc",
+    "description": "Todos los Bakugan en la Tarjeta Puerta tienen su nivel de poder intercambiado.",
+    "hsp": "6,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Switchback",
+    "type": "cogc",
+    "description": "Todos los Bakugan en la Tarjeta Puerta cambian a su atributo original.",
+    "hsp": "2,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Trade Off",
+    "type": "cogc",
+    "description": "Cualquiera de los bandos con un nivel de poder combinado de más de 400 G es derrotado.",
+    "hsp": "5,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Transformation",
+    "type": "cogc",
+    "description": "El poder G de tu Bakugan se vuelve igual al del Bakugan invicto más fuerte que tengas en tu mano.",
+    "hsp": "1,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Ventus Hazard",
+    "type": "cogc",
+    "description": "Todos los Bakugan en la Tarjeta Puerta se cambian a Ventus.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Wall Lock",
+    "type": "cogc",
+    "description": "Devuelve todos los Bakugan en esta Carta Puerta a su G base y niega todos los efectos de las Cartas de Habilidad antes de esta Carta Puerta en una cadena.",
+    "hsp": "5,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Bee Striker Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Bee Striker se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Centipoid Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Centipoid se duplica.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Dragonoid Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Dragonoid se duplica.",
+    "hsp": "6,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Fear Ripper Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Fear Ripper se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Gorem Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Gorem se duplica.",
+    "hsp": "6,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Griffon Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Griffon se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Hydranoid Character",
+    "type": "chgc",
+    "description": "El nivel de potencia de Hydranoid se duplica.",
+    "hsp": "10,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Hynoid Character",
+    "type": "chgc",
+    "description": "El nivel de potencia de Hynoid se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Juggernoid Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Juggernoid se duplica.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Limulus Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Limulus se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Mantris Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Mantris se duplica.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Monarus Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Monarus se duplica.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Preyas Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Preyas se duplica.",
+    "hsp": "6,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Rattleoid Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Rattleoid se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Reaper Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Reaper se duplica.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Robotallion Character",
+    "type": "chgc",
+    "description": "El nivel de potencia de Robotallion se duplica.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Saurus Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Saurus se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Serpenoid Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Serpenoid se duplica.",
+    "hsp": "1,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Skyress Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Skyress se duplica.",
+    "hsp": "6,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Stinglash Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Stinglash se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Terrorclaw Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Terrorclaw se duplica.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Tigrerra Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Tigrerra se duplica.",
+    "hsp": "6,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Tuskor Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Tuskor se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Warius Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Warius se duplica.",
+    "hsp": "2,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Wormquake Character",
+    "type": "chgc",
+    "description": "El nivel de poder de Wormquake se duplica.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Ability Counter",
+    "type": "nac",
+    "attribute": "haos",
+    "description": "Niega la última Carta de Habilidad si apunta a tu Haos Bakugan, se activa en una batalla que involucra a tu Haos Bakugan o altera la Carta Puerta sobre la que se encuentra.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Air Battle",
+    "type": "nac",
+    "attribute": "ventus",
+    "description": "Mueve tu Ventus Bakugan a otra Tarjeta Puerta, evita que esa Tarjeta Puerta se abra mientras permanece en ella.",
+    "hsp": "3,750 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Aqua Bubble",
+    "type": "nac",
+    "attribute": "aquos",
+    "description": "Su Aquos Bakugan evita que un Bakugan se mueva fuera de la Tarjeta Puerta en la que se encuentra actualmente.",
+    "hsp": "3,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Aqua Guardian",
+    "type": "nac",
+    "attribute": "aquos",
+    "description": "Niega la última Carta de Habilidad si apunta a tu Aquos Bakugan, se activa en una batalla que involucra a tu Aquos Bakugan o altera la Carta Puerta sobre la que se encuentra.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Aquos Triple Chain: Tsunami Wave",
+    "type": "nac",
+    "attribute": "aquos",
+    "description": "Si controlas tres Aquos Bakugan en el campo, elige un Aquos Bakugan que controles y derrotará a todos los Bakugan en el campo, excepto al Bakugan contrario en la batalla con él.",
+    "hsp": "7,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Aquatic Refuge",
+    "type": "nac",
+    "attribute": "aquos",
+    "description": "Tu Aquos Bakugan se sumerge bajo su Carta Puerta actual, luego, durante dos de tus turnos, no puede luchar ni moverse mientras está sumergido.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Back Draft",
+    "type": "nac",
+    "attribute": "ventus",
+    "description": "Tu Ventus Bakugan devuelve un Bakugan a la mano de su propietario.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Backfire",
+    "type": "nac",
+    "attribute": "pyrus",
+    "description": "Anula la Carta Puerta en la que se encuentra tu Pyrus Bakugan, luego gana +75 G.",
+    "hsp": "1,000 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Black Is Darkness",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Atrae todos los Bakugan opuestos adyacentes a la Tarjeta Puerta de tu Darkus Bakugan.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Blow Away",
+    "type": "nac",
+    "attribute": "ventus",
+    "description": "Tu Ventus Bakugan mueve un Bakugan contrario a otra Carta Puerta.",
+    "hsp": "4,000 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Burning Soul",
+    "type": "nac",
+    "attribute": "pyrus",
+    "description": "Tu Pyrus Bakugan gana +100 G por cada Bakugan en su Tarjeta Puerta. Si está en una Carta Puerta opuesta, gana +125 G por cada Bakugan en su Carta Puerta.",
+    "hsp": "6,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Copy Cat",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Tu Subterra Bakugan copia la última Tarjeta de Habilidad activada.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Correlation: Aquos & Ventus",
+    "type": "nac",
+    "description": "Si hay un Ventus Bakugan en la tarjeta Gate de tu Aquos Bakugan, tu Aquos Bakugan gana +100 G. Si el otro Bakugan era un aliado, ambos Bakugan ganan +50 G. (Se aplica viceversa)",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Correlation: Darkus & Aquos",
+    "type": "nac",
+    "description": "Si hay un Aquos Bakugan en la Tarjeta Puerta de tu Darkus Bakugan, tu Darkus Bakugan gana +100 G. Si el otro Bakugan era un aliado, ambos Bakugan ganan +50 G. (Se aplica viceversa)",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Correlation: Haos & Darkus",
+    "type": "nac",
+    "description": "Si hay un Darkus Bakugan en la Tarjeta Puerta de tu Haos Bakugan, tu Haos Bakugan gana +100 G. Si el otro Bakugan era un aliado, ambos Bakugan ganan +50 G. (Se aplica viceversa)",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Correlation: Pyrus & Subterra",
+    "type": "nac",
+    "description": "Si hay un Subterra Bakugan en la Tarjeta Puerta de tu Pyrus Bakugan, tu Pyrus Bakugan gana +100 G. Si el otro Bakugan era un aliado, ambos Bakugan ganan +50 G. (Se aplica viceversa)",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Correlation: Subterra & Haos",
+    "type": "nac",
+    "description": "Si hay un Haos Bakugan en la Tarjeta Puerta de tu Subterra Bakugan, tu Subterra Bakugan gana +100 G. Si el otro Bakugan era un aliado, ambos Bakugan ganan +50 G. (Se aplica viceversa)",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Correlation: Ventus & Pyrus",
+    "type": "nac",
+    "description": "Si hay un Pyrus Bakugan en la Tarjeta Puerta de tu Ventus Bakugan, tu Ventus Bakugan gana +100 G. Si el otro Bakugan era un aliado, ambos Bakugan ganan +50 G. (Se aplica viceversa)",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Darkus Gravity",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Tu Darkus Bakugan se mueve a una Carta Puerta de Darkus Bakugan adyacente.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus Triple Chain: Deadly Nightshade",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Si controlas tres Darkus Bakugan en el campo, cada uno de tus Darkus Bakugan transfiere 75 G de cada Bakugan adyacente.",
+    "hsp": "7,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Destroy Force Down",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Tu Darkus Bakugan resta -40 G de cada Bakugan que no controlas.",
+    "hsp": "750 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Diagonal Link: Aquos & Subterra",
+    "type": "nac",
+    "description": "Si hay un Subterra Bakugan en la tarjeta Gate de tu Aquos Bakugan, tu Aquos Bakugan gana +100 G. También puedes seleccionar dos veces tu Bakugan para lanzar un Subterra Bakugan aliado de la mano y luego ganar +100 G. (Se aplica viceversa)",
+    "hsp": "5,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Diagonal Link: Haos & Ventus",
+    "type": "nac",
+    "description": "Si hay un Ventus Bakugan en la Tarjeta Puerta de tu Haos Bakugan, tu Haos Bakugan gana +100 G. También puedes seleccionar dos veces tu Bakugan para lanzar un Ventus Bakugan aliado de la mano y luego ganar +100 G. (Se aplica viceversa)",
+    "hsp": "5,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Diagonal Link: Pyrus & Darkus",
+    "type": "nac",
+    "description": "Si hay un Darkus Bakugan en la Tarjeta Puerta de tu Pyrus Bakugan, tu Pyrus Bakugan gana +100 G. También puedes seleccionar dos veces tu Bakugan para lanzar un Darkus Bakugan aliado de la mano y luego ganar +100 G. (Se aplica viceversa)",
+    "hsp": "5,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Dimension Four",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Tu Darkus Bakugan resta 2/4 de las G de un Bakugan contrario con el que está luchando si está en una Carta de Atributo Puerta; de lo contrario, resta 1/4 de sus G.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Dive Mirage",
+    "type": "nac",
+    "attribute": "aquos",
+    "description": "Tu Aquos Bakugan se mueve a otra Carta Puerta, si esa Carta Puerta pertenece a un oponente, anúlala.",
+    "hsp": "4,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Doom Companion",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Si la Carta Doom está abierta, entonces tu Darkus Bakugan derrota a todos los Bakugan en su Carta Puerta, incluido él mismo.",
+    "hsp": "10,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Double Dimension",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Niega la última Carta de Habilidad si apunta a tu Darkus Bakugan, se activa en una batalla que involucra a tu Darkus Bakugan o altera la Carta Puerta sobre la que se encuentra.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Earth Power",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Añade +50 G a tu Subterra Bakugan.",
+    "hsp": "500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Enhancement",
+    "type": "nac",
+    "attribute": "haos",
+    "description": "Tu Haos Bakugan agrega +100 G a un Bakugan aliado o agrega +50 G a sí mismo.",
+    "hsp": "500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Fire Judge",
+    "type": "nac",
+    "attribute": "pyrus",
+    "description": "Tu Pyrus Bakugan gana +100 G.",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Fire Tornado",
+    "type": "nac",
+    "attribute": "pyrus",
+    "description": "Transfiere 100 G de un Bakugan contrario en batalla con tu Pyrus Bakugan.",
+    "hsp": "3,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Fire Wall",
+    "type": "nac",
+    "attribute": "pyrus",
+    "description": "Mientras está en la Tarjeta Puerta, tu Pyrus Bakugan resta 50 G de cada Bakugan contrario.",
+    "hsp": "500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Gate Building",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Tu Subterra Bakugan te permite robar una Tarjeta Puerta y configurarla.",
+    "hsp": "1,000 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Grand Down",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Anula la carta de entrada en la que se encuentra tu Darkus Bakugan.",
+    "hsp": "500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Grand Slide",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Desliza una Tarjeta de Puerta en el campo a un espacio vacío adyacente a tu Subterra Bakugan, luego mueve tu Subterra Bakugan a esa Tarjeta de Puerta.",
+    "hsp": "3,750 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Grounded Infection",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Si la Tarjeta Puerta en la que se encuentra su Subterra Bakugan está anulada, transfiera esa anulación a una Tarjeta Puerta adyacente, luego reactive la Tarjeta Puerta en la que se encuentra su Subterra Bakugan.",
+    "hsp": "3,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos Freeze",
+    "type": "nac",
+    "attribute": "haos",
+    "description": "Agrega inmediatamente un Haos Bakugan adicional de tu mano a una batalla, si el Bakugan es de un compañero de equipo, puede ser cualquier atributo.",
+    "hsp": "6,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Haos Triple Chain: Haos Stasis",
+    "type": "nac",
+    "attribute": "haos",
+    "description": "Si controlas tres Haos Bakugan en el campo, selecciona un Haos Bakugan que controles. Gana +100 G, luego recupera 1 carta de habilidad usada, luego tú y todos los compañeros de equipo roban 1 carta de habilidad cada uno.",
+    "hsp": "7,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Holograph Divide",
+    "type": "nac",
+    "attribute": "aquos",
+    "description": "Agrega +50 G a tu Aquos Bakugan, luego agrega +50 G al final de los turnos de tu equipo.",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Jump Over",
+    "type": "nac",
+    "attribute": "ventus",
+    "description": "Tu Ventus Bakugan se mueve a una Carta Puerta adyacente.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Lightning Shield",
+    "type": "nac",
+    "attribute": "haos",
+    "description": "Anula la Tarjeta Puerta en la que se encuentra tu Haos Bakugan, si seleccionas un Bakugan aliado que no sea Haos, anula la Tarjeta Puerta de Atributo en la que se encuentra.",
+    "hsp": "750 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Lightning Tornado",
+    "type": "nac",
+    "attribute": "haos",
+    "description": "Transfiere 100 G de un Bakugan contrario en batalla con tu Haos Bakugan.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Magma Prominence",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Cambie la tarjeta de puerta abierta en la que se encuentra su Subterra Bakugan; si es una Tarjeta de Puerta de Atributo, cambia su Atributo a Subterra; de lo contrario, cámbiala por una Tarjeta de Puerta Subterra 50.",
+    "hsp": "3,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Oregano Revenge",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Tu Darkus Bakugan resta -100 G de cada Bakugan contrario con el que esté luchando, tú ganas +100 G y cada Bakugan aliado en la Carta Puerta gana +100 G si se combina con un Bakugan contrario en la batalla.",
+    "hsp": "5,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Power Charge",
+    "type": "nac",
+    "attribute": "pyrus",
+    "description": "Tu Pyrus Bakugan gana +100 G, comenzando después de dos turnos, a menos que sea derrotado o devuelto a la mano, puede atacar a un Bakugan contrario.",
+    "hsp": "4,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pure Light",
+    "type": "nac",
+    "attribute": "haos",
+    "description": "Tu Haos Bakugan revive cualquier Bakugan derrotado y lo devuelve a tu mano o a la de un compañero de equipo.",
+    "hsp": "5,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Pyrus Triple Chain: Inferno Trinity",
+    "type": "nac",
+    "attribute": "pyrus",
+    "description": "Si controlas tres Pyrus Bakugan en el campo, todos tus Pyrus Bakugan ganan +100 G por cada Bakugan contrario en el campo, luego todos tus Pyrus Bakugan ganan permanentemente +50 G.",
+    "hsp": "7,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Rapid Fire",
+    "type": "nac",
+    "attribute": "pyrus",
+    "description": "Agrega un Pyrus Bakugan adicional en tu mano a la batalla; Si el Bakugan es de un compañero de equipo, puede ser cualquier atributo.",
+    "hsp": "3,750 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Rapid Haos",
+    "type": "nac",
+    "attribute": "haos",
+    "description": "Agrega un Haos Bakugan adicional en tu mano a la batalla; Si el Bakugan es de un compañero de equipo, puede ser cualquier atributo.",
+    "hsp": "3,750 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Reverse Blow",
+    "type": "nac",
+    "attribute": "ventus",
+    "description": "Devuelve tu Ventus Bakugan a tu mano.",
+    "hsp": "1,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Sand Trap",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Tu Subterra Bakugan ataca al Bakugan de un oponente adyacente, si no es derrotado, pierde -50 G y comienza una batalla.",
+    "hsp": "4,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Scarlet Twister",
+    "type": "nac",
+    "attribute": "ventus",
+    "description": "Tu Ventus Bakugan mueve un Bakugan a otra Carta Puerta, si ese Bakugan estaba en una batalla, tu Ventus Bakugan es derrotado.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Seismic Trigger",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Tu Subterra Bakugan apunta a otro Bakugan que está parado sobre una Tarjeta Puerta, luego ese Bakugan activa por la fuerza la Tarjeta Puerta sobre la que está parada. (El lanzador puede apuntar a sí mismo si la Cadena está activa)",
+    "hsp": "3,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Shade Ability",
+    "type": "nac",
+    "attribute": "haos",
+    "description": "Tu Haos Bakugan borra todos los efectos de las Cartas de Habilidad de un Bakugan con G alteradas, devolviéndolo a las G base. (negando las Cartas de Habilidad que usó en la cadena)",
+    "hsp": "5,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Soul Binder",
+    "type": "nac",
+    "attribute": "darkus",
+    "description": "Anula la Carta Puerta sobre la que se encuentra tu Darkus Bakugan si la posees, luego destruye una Carta Puerta enemiga.",
+    "hsp": "3,500",
+    "limit": "1"
+  },
+  {
+    "name": "Spirit Canyon",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Tu Subterra Bakugan copia los efectos de la Carta Puerta que altera la G de tu oponente y los aplica a un Bakugan en el campo.",
+    "hsp": "3,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Storm Breaker",
+    "type": "nac",
+    "attribute": "ventus",
+    "description": "Anula la carta de puerta en la que se encuentra tu Ventus Bakugan.",
+    "hsp": "500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Subterra Triple Chain: Gaia Pressure",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Si controlas tres Subterra Bakugan en el campo, todas las Tarjetas Puerta que controlas no pueden ser anuladas, entonces todas las Tarjetas Puerta opuestas en el campo se convierten en Tarjetas Puerta Subterra +100 y su propiedad se te transfiere a ti.",
+    "hsp": "7,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Terra Crunch",
+    "type": "nac",
+    "attribute": "subterra",
+    "description": "Tu Subterra Bakugan gana +50 G por cada Carta Puerta que controlas y 25 G por cada Carta Puerta que controlan tus aliados.",
+    "hsp": "2,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Positive Triple Node",
+    "type": "nac",
+    "description": "Si tu equipo tiene un Pyrus, Aquos y Haos Bakugan en el campo, obtienen +200 G.",
+    "hsp": "8,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Negative Triple Node",
+    "type": "nac",
+    "description": "Darkus, Ventus y Subterra Bakugan en el campo, obtienen +200 G.",
+    "hsp": "8,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Ventus Triple Chain: Winds Of Fury",
+    "type": "nac",
+    "attribute": "ventus",
+    "description": "Si controlas tres Ventus Bakugan en el campo, un Ventus Bakugan que controlas hace que un Bakugan adyacente (o uno en la misma Carta Puerta) pierda -100 G, entonces todos tus Ventus Bakugan pueden atacar a un Bakugan adyacente.",
+    "hsp": "7,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Wall Burst",
+    "type": "nac",
+    "attribute": "pyrus",
+    "description": "Refleja la última Carta de Habilidad si apunta a tu Pyrus Bakugan o altera la Carta de Puerta en la que se encuentra.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Water Refrain",
+    "type": "nac",
+    "attribute": "aquos",
+    "description": "Tu Aquos Bakugan niega inmediatamente todas las Cartas de Habilidad no activadas en la cadena.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Water Slap",
+    "type": "nac",
+    "attribute": "aquos",
+    "description": "Tu Aquos Bakugan resta -50 G de un Bakugan contrario.",
+    "hsp": "500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Abyss Ruler",
+    "type": "sac",
+    "description": "Stinglash gana +100 G.",
+    "hsp": "2,000 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Attractor",
+    "type": "sac",
+    "description": "Lleva un Bakugan aliado a la batalla de Centipoid, o lleva un Bakugan enemigo a la Carta Puerta de Centipoid.",
+    "hsp": "5,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Blue Stealth",
+    "type": "sac",
+    "description": "Preyas transfiere 50 G de un Bakugan contrario con el que está en batalla, luego anula la Tarjeta Puerta.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Boosted Dragon",
+    "type": "sac",
+    "description": "Dragonoid gana permanentemente +100 G.",
+    "hsp": "3,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Chaos Of The Darkness",
+    "type": "sac",
+    "description": "Hydranoid ataca a un Bakugan en el campo, si ese Bakugan tiene G más bajos, es derrotado.",
+    "hsp": "8,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Crystal Fang",
+    "type": "sac",
+    "description": "Tigrerra gana +80 G.",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Cut In Saber",
+    "type": "sac",
+    "description": "Inmediatamente permite que Tigrerra entre a la batalla actual.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Cut In Slayer",
+    "type": "sac",
+    "description": "Tigrerra derrota al Bakugan aliado (mano/campo/ambos) y transfiere los G a un Bakugan elegido.",
+    "hsp": "3,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Darkon Phaser",
+    "type": "sac",
+    "attribute": "darkus",
+    "description": "Darkus Griffon transfiere 50 G de un Bakugan contrario a un Bakugan aliado.",
+    "hsp": "2,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Death Scythe",
+    "type": "sac",
+    "description": "Reaper resta permanentemente -75 G de un Bakugan contrario.",
+    "hsp": "3,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Depth Tornado",
+    "type": "sac",
+    "description": "Juggernoid gana +100 G.",
+    "hsp": "2,000 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Desert Thunder",
+    "type": "sac",
+    "description": "Hynoid transfiere 50 G de un oponente.",
+    "hsp": "1,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Destruction Buster",
+    "type": "sac",
+    "description": "Hydranoid anula la Carta Puerta en la que se encuentra y luego gana +100 G.",
+    "limit": "1"
+  },
+  {
+    "name": "Fire Storm",
+    "type": "sac",
+    "description": "Skyress gana +125 G.",
+    "hsp": "3,000 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Gaia Breaker",
+    "type": "sac",
+    "description": "Gorem destruye una Carta Puerta en el campo.",
+    "limit": "1"
+  },
+  {
+    "name": "Gaia Slammer",
+    "type": "sac",
+    "attribute": "subterra",
+    "description": "Un Bakugan contrario se mueve a una Carta Puerta adyacente a Subterra Griffon, luego pierde -50 G.",
+    "hsp": "3,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Gravity Chamber",
+    "type": "sac",
+    "description": "Hydranoid atrae a todos los Bakugan opuestos adyacentes con G más bajos que él a su Tarjeta Puerta, luego esos Bakugan son derrotados.",
+    "hsp": "12,750 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Green Aegis",
+    "type": "sac",
+    "attribute": "ventus",
+    "description": "Ventus Griffon otorga a todos los aliados adyacentes +50 G, luego todos los oponentes adyacentes pierden -50 G.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Hydro Striver",
+    "type": "sac",
+    "attribute": "aquos",
+    "description": "Mueve un Bakugan aliado a la Tarjeta Puerta de Aquos Griffon, luego agrega +50 G al Bakugan movido.",
+    "hsp": "3,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Marionette",
+    "type": "sac",
+    "description": "Mantris mueve el Bakugan de un oponente a otra Carta Puerta.",
+    "hsp": "5,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Mega Impact",
+    "type": "sac",
+    "description": "Gorem gana +50 G y luego un Bakugan contrario en batalla pierde -100 G.",
+    "hsp": "3,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Melt Flare",
+    "type": "sac",
+    "description": "Dragonoid gana +175 G, luego mantiene permanentemente +50 G de esa ganancia.",
+    "limit": "1"
+  },
+  {
+    "name": "Merge Shield",
+    "type": "sac",
+    "description": "Hydranoid gana los mismos G que se agregan al Bakugan contrario con el que está en batalla.",
+    "hsp": "5,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Nose Slap",
+    "type": "sac",
+    "description": "Tuskor ataca a un Bakugan adyacente; si es derrotado, puedes mantener a Tuskor en el campo o devolverlo a tu mano.",
+    "hsp": "3,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Poison Fang",
+    "type": "sac",
+    "description": "Rattleoid transfiere 50 G del Bakugan contrario con el que está luchando, una vez que Rattleoid es derrotado, ese Bakugan pierde permanentemente -50 G cada vez que es expulsado, mientras permanece en el campo, también pierde -10 G al comienzo de cada uno de sus turnos.",
+    "hsp": "4,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Raging Tempest",
+    "type": "sac",
+    "description": "Skyress intercambia posiciones en el campo con un Bakugan contrario, ese Bakugan pierde -85 G.",
+    "limit": "1"
+  },
+  {
+    "name": "Robotallion Enforcement",
+    "type": "sac",
+    "description": "Robotallion gana permanentemente +50 G, luego puede elegir hasta dos Bakugan aliados para ganar también permanentemente +50 G. Por cada batalla que ganan estos Bakugan, su bonificación permanente aumenta en +25 G. Si Robotallion es derrotado, todas estas bonificaciones se eliminan.",
+    "hsp": "7,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Saurus Glow",
+    "type": "sac",
+    "description": "Saurus gana permanentemente +50 G.",
+    "hsp": "2,750 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Shining Saber",
+    "type": "sac",
+    "description": "Tigrerra y todos los Bakugan aliados obtienen +75 G.",
+    "limit": "1"
+  },
+  {
+    "name": "Slash Zero",
+    "type": "sac",
+    "description": "Fear Ripper gana +80 G.",
+    "hsp": "3,000 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Slice Cutter",
+    "type": "sac",
+    "description": "Mantris resta 50 G de un Bakugan contrario.",
+    "hsp": "1,000 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Sling Blazer",
+    "type": "sac",
+    "description": "Mantris mueve inmediatamente un Bakugan aliado u enemigo en la batalla con él a una Carta Puerta adyacente.",
+    "hsp": "6,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Super Shard",
+    "type": "sac",
+    "description": "Juggernoid resta -75 G de un Bakugan contrario.",
+    "hsp": "2,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Twin Machete",
+    "type": "sac",
+    "description": "Mantris gana +100 G.",
+    "hsp": "2,000 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Vanishing Finish",
+    "type": "sac",
+    "description": "Preyas gana inmediatamente +80 G y conserva 40 G de forma permanente.",
+    "limit": "1"
+  },
+  {
+    "name": "Venomous Beast Torrent Attack",
+    "type": "sac",
+    "attribute": "haos",
+    "description": "Derrota automáticamente a tu Haos Griffon en la batalla, luego revive un Bakugan derrotado que posees y gana +50 G.",
+    "hsp": "3,500 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Vice Grip",
+    "type": "sac",
+    "description": "Si la última habilidad tiene como objetivo un Bakugan aliado, Terrorclaw se convierte en el objetivo.",
+    "hsp": "5,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Wing Burst",
+    "type": "sac",
+    "attribute": "pyrus",
+    "description": "Transfiere 50 G de un Bakugan contrario a tu Pyrus Griffon, luego cada uno de los Pyrus Bakugan que controlas ganan +25 G.",
+    "hsp": "1,500 HSP",
+    "limit": "2"
+  }
+]

@@ -1,0 +1,730 @@
+[
+    {
+        "name": "Bee Striker",
+        "tier": "C",
+        "gs": {
+            "aquos": "295 G's",
+            "darkus": "305 G's",
+            "haos": "295 G's",
+            "pyrus": "295 G's",
+            "subterra": "310 G's",
+            "ventus": "315 G's"
+        },
+        "hsp": "3,250 HSP",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Centipoid",
+        "tier": "B",
+        "gs": {
+            "aquos": "310 G's",
+            "darkus": "300 G's",
+            "haos": "320 G's",
+            "pyrus": "310 G's",
+            "subterra": "300 G's",
+            "ventus": "300 G's"
+        },
+        "hsp": "7,000 HSP",
+        "cards": {
+            "attributeless": "Attractor",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Dragonoid",
+        "tier": "A",
+        "gs": {
+            "aquos": "320 G's",
+            "darkus": "340 G's",
+            "haos": "300 G's",
+            "pyrus": "340 G's",
+            "subterra": "320 G's",
+            "ventus": "300 G's"
+        },
+        "hsp": "10,000 HSP",
+        "cards": {
+            "attributeless": "Boosted Dragon",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "El-Condor",
+        "tier": "",
+        "gs": {
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        },
+        "hsp": "",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Falconeer",
+        "tier": "",
+        "gs": {
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        },
+        "hsp": "",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Fear Ripper",
+        "tier": "C",
+        "gs": {
+            "aquos": "290 G's",
+            "darkus": "310 G's",
+            "haos": "290 G's",
+            "pyrus": "290 G's",
+            "subterra": "300 G's",
+            "ventus": "300 G's"
+        },
+        "hsp": "6,000 HSP",
+        "cards": {
+            "attributeless": "Slash Zero",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Gargonoid",
+        "tier": "",
+        "gs": {
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        },
+        "hsp": "",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Gorem",
+        "tier": "A",
+        "gs": {
+            "aquos": "360 G's",
+            "darkus": "320 G's",
+            "haos": "340 G's",
+            "pyrus": "320 G's",
+            "subterra": "360 G's",
+            "ventus": "340 G's"
+        },
+        "hsp": "10,000 HSP",
+        "cards": {
+            "attributeless": "Mega Impact",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Griffon",
+        "tier": "C",
+        "gs": {
+            "aquos": "300 G's",
+            "darkus": "300 G's",
+            "haos": "300 G's",
+            "pyrus": "300 G's",
+            "subterra": "300 G's",
+            "ventus": "300 G's"
+        },
+        "hsp": "4,500 HSP",
+        "cards": {
+            "attributeless": "",
+            "aquos": "Hydro Striver",
+            "darkus": "Darkon Phaser",
+            "haos": "Venomous Beast Torrent Attack",
+            "pyrus": "Wing Burst",
+            "subterra": "Gaia Slammer",
+            "ventus": "Green Aegis"
+        }
+    },
+    {
+        "name": "Hydranoid",
+        "tier": "A",
+        "gs": {
+            "aquos": "340 G's",
+            "darkus": "360 G's",
+            "haos": "320 G's",
+            "pyrus": "360 G's",
+            "subterra": "340 G's",
+            "ventus": "320 G's"
+        },
+        "hsp": "14,500 HSP",
+        "cards": {
+            "attributeless": [
+                "Chaos Of The Darkness",
+                "Gravity Chamber",
+                "Merge Shield"
+            ],
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    }, 
+    {
+        "name": "Hynoid",
+        "tier": "C",
+        "gs": {
+            "aquos": "310 G's",
+            "darkus": "300 G's",
+            "haos": "320 G's",
+            "pyrus": "310 G's",
+            "subterra": "300 G's",
+            "ventus": "300 G's"
+        },
+        "hsp": "4,500 HSP",
+        "cards": {
+            "attributeless": "Desert Thunder",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Juggernoid",
+        "tier": "B",
+        "gs": {
+            "aquos": "330 G's",
+            "darkus": "310 G's",
+            "haos": "325 G's",
+            "pyrus": "320 G's",
+            "subterra": "310 G's",
+            "ventus": "310 G's"
+        },
+        "hsp": "6,500 HSP",
+        "cards": {
+            "attributeless": [
+                "Depth Tornado",
+                "Super Shard"
+            ],
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Laserman",
+        "tier": "B",
+        "gs": {
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        },
+        "hsp": "",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Limulus",
+        "tier": "C",
+        "gs": {
+            "aquos": "310 G's",
+            "darkus": "290 G's",
+            "haos": "300 G's",
+            "pyrus": "300 G's",
+            "subterra": "290 G's",
+            "ventus": "290 G's"
+        },
+        "hsp": "3,000 HSP",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Manion",
+        "tier": "",
+        "gs": {
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        },
+        "hsp": "",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Mantris",
+        "tier": "C",
+        "gs": {
+            "aquos": "275 G's",
+            "darkus": "275 G's",
+            "haos": "275 G's",
+            "pyrus": "275 G's",
+            "subterra": "275 G's",
+            "ventus": "275 G's"
+        },
+        "hsp": "8,500 HSP",
+        "cards": {
+            "attributeless": [
+                "Marionette",
+                "Slice Cutter",
+                "Sling Blazer",
+                "Twin Machete"
+            ],
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Monarus",
+        "tier": "B",
+        "gs": {
+            "aquos": "310",
+            "darkus": "320",
+            "haos": "310",
+            "pyrus": "310",
+            "subterra": "320",
+            "ventus": "330"
+        },
+        "hsp": "6,500",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Preyas",
+        "tier": "A",
+        "attribute":{
+            "aquos": "aquos, darkus, subterra",
+            "darkus": "darkus, haos, pyrus",
+            "haos": "haos, subterra, ventus",
+            "pyrus": "pyrus, darkus, ventus",
+            "subterra": "subterra, aquos, pyrus",
+            "ventus": "ventus, aquos, haos"
+        },
+        "gs": {
+            "aquos": "340 G's",
+            "darkus": "300 G's",
+            "haos": "320 G's",
+            "pyrus": "300 G's",
+            "subterra": "340 G's",
+            "ventus": "320 G's"
+        },
+        "hsp": "10,000 HSP",
+        "cards": {
+            "attributeless": "Blue Stealth",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Rattleoid",
+        "tier": "",
+        "gs": {
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        },
+        "hsp": "",
+        "cards": {
+            "attributeless": "Poison Fang",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Reaper",
+        "tier": "B",
+        "gs": {
+            "aquos": "310 G's",
+            "darkus": "330 G's",
+            "haos": "310 G's",
+            "pyrus": "310 G's",
+            "subterra": "325 G's",
+            "ventus": "320 G's"
+        },
+        "hsp": "7,000 HSP",
+        "cards": {
+            "attributeless": "Death Scythe",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Robotallion",
+        "tier": "B",
+        "gs": {
+            "aquos": "295 G's",
+            "darkus": "285 G's",
+            "haos": "295 G's",
+            "pyrus": "305 G's",
+            "subterra": "285 G's",
+            "ventus": "285 G's"
+        },
+        "hsp": "7,000 HSP",
+        "cards": {
+            "attributeless": "Robotallion Enforcement",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Saurus",
+        "tier": "C",
+        "gs": {
+            "aquos": "310 G's",
+            "darkus": "300 G's",
+            "haos": "320 G's",
+            "pyrus": "310 G's",
+            "subterra": "300 G's",
+            "ventus": "300 G's"
+        },
+        "hsp": "6,000 HSP",
+        "cards": {
+            "attributeless": "Saurus Glow",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Serpenoid",
+        "tier": "C",
+        "gs": {
+            "aquos": "305 G's",
+            "darkus": "295 G's",
+            "haos": "305 G's",
+            "pyrus": "315 G's",
+            "subterra": "295 G's",
+            "ventus": "295 G's"
+        },
+        "hsp": "3,000 HSP",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Siege",
+        "tier": "B",
+        "gs": {
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        },
+        "hsp": "",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Skyress",
+        "tier": "A",
+        "gs": {
+            "aquos": "320 G's",
+            "darkus": "340 G's",
+            "haos": "360 G's",
+            "pyrus": "340 G's",
+            "subterra": "320 G's",
+            "ventus": "360 G's"
+        },
+        "hsp": "8,500 HSP",
+        "cards": {
+            "attributeless": "Fire Storm",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Stinglash",
+        "tier": "C",
+        "gs": {
+            "aquos": "320 G's",
+            "darkus": "300 G's",
+            "haos": "310 G's",
+            "pyrus": "310 G's",
+            "subterra": "300 G's",
+            "ventus": "300 G's"
+        },
+        "hsp": "6,000 HSP",
+        "cards": {
+            "attributeless": "Abyss Ruler",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Terrorclaw",
+        "tier": "B",
+        "gs": {
+            "aquos": "305 G's",
+            "darkus": "285 G's",
+            "haos": "295 G's",
+            "pyrus": "295 G's",
+            "subterra": "285 G's",
+            "ventus": "285 G's"
+        },
+        "hsp": "7,000 HSP",
+        "cards": {
+            "attributeless": "Vice Grip",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Tigrerra",
+        "tier": "A",
+        "gs": {
+            "aquos": "300 G's",
+            "darkus": "320 G's",
+            "haos": "340 G's",
+            "pyrus": "320 G's",
+            "subterra": "300 G's",
+            "ventus": "340 G's"
+        },
+        "hsp": "10,000 HSP",
+        "cards": {
+            "attributeless": [
+                "Crystal Fang",
+                "Cut In Saber",
+                "Cut In Slayer"
+            ],
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Tuskor",
+        "tier": "C",
+        "gs": {
+            "aquos": "300 G's",
+            "darkus": "310 G's",
+            "haos": "300 G's",
+            "pyrus": "300 G's",
+            "subterra": "320 G's",
+            "ventus": "310 G's"
+        },
+        "hsp": "5,000 HSP",
+        "cards": {
+            "attributeless": "Nose Slap",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Warius",
+        "tier": "C",
+        "gs": {
+            "aquos": "315 G's",
+            "darkus": "305 G's",
+            "haos": "315 G's",
+            "pyrus": "325 G's",
+            "subterra": "305 G's",
+            "ventus": "305 G's"
+        },
+        "hsp": "5,500 HSP",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "Wormquake",
+        "tier": "B",
+        "gs": {
+            "aquos": "315 G's",
+            "darkus": "295 G's",
+            "haos": "315 G's",
+            "pyrus": "315 G's",
+            "subterra": "335 G's",
+            "ventus": "325 G's"
+        },
+        "hsp": "6,750 HSP",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    },
+    {
+        "name": "",
+        "tier": "",
+        "gs": {
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        },
+        "hsp": "",
+        "cards": {
+            "attributeless": "",
+            "aquos": "",
+            "darkus": "",
+            "haos": "",
+            "pyrus": "",
+            "subterra": "",
+            "ventus": ""
+        }
+    }
+]
