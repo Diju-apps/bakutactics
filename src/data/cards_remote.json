@@ -56,6 +56,14 @@
         "limit": "2"
     },
     {
+        "name": "Aquos 180",
+        "type": "agc",
+        "attribute": "aquos",
+        "description": "Aquos Bakugan present on the Gate Card gain +180 G's.",
+        "hsp": "10,000 HSP",
+        "limit": "2"
+    },
+    {
         "name": "Aquos 200",
         "type": "agc",
         "attribute": "aquos",
@@ -120,6 +128,14 @@
         "limit": "2"
     },
     {
+        "name": "Darkus 180",
+        "type": "agc",
+        "attribute": "darkus",
+        "description": "Darkus Bakugan present on the Gate Card gain +180 G's.",
+        "hsp": "10,000 HSP",
+        "limit": "2"
+    },    
+    {
         "name": "Darkus 200",
         "type": "agc",
         "attribute": "darkus",
@@ -181,6 +197,14 @@
         "attribute": "haos",
         "description": "Haos Bakugan present on the Gate Card gain +150 G's.",
         "hsp": "7,500 HSP",
+        "limit": "2"
+    },
+    {
+        "name": "Haos 180",
+        "type": "agc",
+        "attribute": "haos",
+        "description": "Haos Bakugan present on the Gate Card gain +180 G's.",
+        "hsp": "10,000 HSP",
         "limit": "2"
     },
     {
@@ -248,6 +272,14 @@
         "limit": "2"
     },
     {
+        "name": "Pyrus 180",
+        "type": "agc",
+        "attribute": "pyrus",
+        "description": "Pyrus Bakugan present on the Gate Card gain +180 G's.",
+        "hsp": "10,000 HSP",
+        "limit": "2"
+    },
+    {
         "name": "Pyrus 200",
         "type": "agc",
         "attribute": "pyrus",
@@ -309,6 +341,14 @@
         "attribute": "subterra",
         "description": "Subterra Bakugan present on the Gate Card gain +150 G's.",
         "hsp": "7,500 HSP",
+        "limit": "2"
+    },
+    {
+        "name": "Subterra 180",
+        "type": "agc",
+        "attribute": "subterra",
+        "description": "Bakugan present on the Gate Card gain +180 G's.",
+        "hsp": "10,000 HSP",
         "limit": "2"
     },
     {
@@ -376,6 +416,14 @@
         "limit": "2"
     },
     {
+        "name": "Ventus 180",
+        "type": "agc",
+        "attribute": "ventus",
+        "description": "Ventus Bakugan present on the Gate Card gain +180 G's.",
+        "hsp": "10,000 HSP",
+        "limit": "2"
+    },
+    {
         "name": "Ventus 200",
         "type": "agc",
         "attribute": "ventus",
@@ -400,7 +448,7 @@
     {
         "name": "Aquos Hazard",
         "type": "cogc",
-        "description": "All Bakugan on the Gate Card are changed to Aquos.",
+        "description":"All Bakugan on the Gate Card are changed to Aquos.",
         "hsp": "3,000 HSP",
         "limit": "2"
     },
@@ -414,11 +462,11 @@
     {
         "name": "Darkus Hazard",
         "type": "cogc",
-        "description": "All Bakugan on the Gate Card are changed to Darkus.",
+        "description":"All Bakugan on the Gate Card are changed to Darkus.",
         "hsp": "3,000 HSP",
         "limit": "2"
     },
-    {
+        {
         "name": "Doom Card",
         "type": "cogc",
         "description": "While this Gate Card is open, Doom Ability Cards are enabled; Bakugan defeated after the activation of this Gate Card cannot be revived.",
@@ -449,7 +497,7 @@
     {
         "name": "Haos Hazard",
         "type": "cogc",
-        "description": "All Bakugan on the Gate Card are changed to Haos.",
+        "description":"All Bakugan on the Gate Card are changed to Haos.",
         "hsp": "3,000 HSP",
         "limit": "2"
     },
@@ -519,7 +567,7 @@
     {
         "name": "Pyrus Hazard",
         "type": "cogc",
-        "description": "All Bakugan on the Gate Card are changed to Pyrus.",
+        "description":"All Bakugan on the Gate Card are changed to Pyrus.",
         "hsp": "3,000 HSP",
         "limit": "2"
     },
@@ -561,7 +609,7 @@
     {
         "name": "Subterra Hazard",
         "type": "cogc",
-        "description": "All Bakugan on the Gate Card are changed to Subterra.",
+        "description":"All Bakugan on the Gate Card are changed to Subterra.",
         "hsp": "3,000 HSP",
         "limit": "2"
     },
@@ -596,7 +644,7 @@
     {
         "name": "Ventus Hazard",
         "type": "cogc",
-        "description": "All Bakugan on the Gate Card are changed to Ventus.",
+        "description":"All Bakugan on the Gate Card are changed to Ventus.",
         "hsp": "3,000 HSP",
         "limit": "2"
     },
@@ -626,6 +674,13 @@
         "type": "chgc",
         "description": "Dragonoid's power level is doubled.",
         "hsp": "6,000 HSP",
+        "limit": "1"
+    },
+    {
+        "name": "El Condor Character",
+        "type": "chgc",
+        "description": "El Condor's power level is doubled.",
+        "hsp": "4,000 HSP",
         "limit": "1"
     },
     {
@@ -747,7 +802,7 @@
         "hsp": "2,500 HSP",
         "limit": "1"
     },
-    {
+    {    
         "name": "Terrorclaw Character",
         "type": "chgc",
         "description": "Terrorclaw's power level is doubled.",
@@ -1172,7 +1227,7 @@
         "description": "Add an additional Haos Bakugan in your hand into battle; if the Bakugan is a teammate's, it can be any attribute",
         "hsp": "3,750 HSP",
         "limit": "1"
-    },
+    },    
     {
         "name": "Reverse Blow",
         "type": "nac",
@@ -1314,6 +1369,14 @@
         "limit": "2"
     },
     {
+        "name": "Blessing of Comradery",
+        "type": "sac",
+        "attribute": "haos",
+        "description": "Haos El Condor transfers and splits its G's between up to two allied Bakugan in hand or on the field; if an allied Bakugan returns to hand, El Condor regains the G's transferred; if only one Bakugan is selected, only half of its G's are transferred.",
+        "hsp": "9,000 HSP",
+        "limit": "2"
+    },
+    {
         "name": "Blue Stealth",
         "type": "sac",
         "description": "Preyas transfers 50 G's from an opposing Bakugan it is in battle with, then nullifies the Gate Card.",
@@ -1340,6 +1403,14 @@
         "description": "Tigrerra gains +80 G's.",
         "hsp": "1,500 HSP",
         "limit": "3"
+    },
+    {
+        "name": "Curse of Obsidian",
+        "type": "sac",
+        "attribute": "darkus",
+        "description": "Transfer 50 G's from a diagonal opposing Bakugan to Darkus El Condor; additionally, that Bakugan cannot gain G's until it returns to hand.",
+        "hsp": "7,500 HSP",
+        "limit": "2"
     },
     {
         "name": "Cut In Saber",
@@ -1391,6 +1462,14 @@
         "limit": "1"
     },
     {
+        "name": "Dragoon",
+        "type": "sac",
+        "attribute": "subterra",
+        "description": "Subterra El Condor gains G's equal to the current G's of an opposing Bakugan it is in battle with; otherwise, if the last played Ability Card targets El Condor, it gains G's equal to the current G's of that card's caster.",
+        "hsp": "10,000 HSP",
+        "limit": "1"
+    },
+    {
         "name": "Fire Storm",
         "type": "sac",
         "description": "Skyress gains +125 G's.",
@@ -1425,6 +1504,13 @@
         "description": "Ventus Griffon gives all adjacent allies +50 G's, then all adjacent opponents lose -50 G's.",
         "hsp": "3,000 HSP",
         "limit": "2"
+    },
+    {
+        "name": "Hot Blast",
+        "type": "sac",
+        "description": " El Condor nullifies the Gate Card it is currently on; then an opposing Bakugan in battle with it loses -50 G's.",
+        "hsp": "2,500 HSP",
+        "limit": "3"
     },
     {
         "name": "Hydro Striver",
@@ -1467,6 +1553,14 @@
         "description": "Tuskor attacks an adjacent Bakugan, if it is defeated, you may keep Tuskor on the field or return it to your hand.",
         "hsp": "3,500 HSP",
         "limit": "1"
+    },
+    {
+        "name": "Phoenix Burst",
+        "type": "sac",
+        "attribute": "pyrus",
+        "description": "Pyrus El Condor gains G's equal to half of its current G's; if it wins a battle, it permanently gains +50 G's.",
+        "hsp": "7,500 HSP",
+        "limit": "2"
     },
     {
         "name": "Poison Fang",
@@ -1523,10 +1617,26 @@
         "limit": "1"
     },
     {
+        "name": "Solar Plexus",
+        "type": "sac",
+        "attribute": "ventus",
+        "description": "Ventus El Condor is immune to movement from all card effects; while it remains on the field, any opposing Bakugan that moves loses -75 G's, and any allied Bakugan that moves gains +75 G's.",
+        "hsp": "7,500 HSP",
+        "limit": "2"
+    },
+    {
         "name": "Super Shard",
         "type": "sac",
         "description": "Juggernoid subtracts -75 G's from an opposing Bakugan.",
         "hsp": "2,500 HSP",
+        "limit": "2"
+    },
+    {
+        "name": "Totemic Tide",
+        "type": "sac",
+        "attribute": "aquos",
+        "description": "Aquos El Condor gains +75 G's; while El Condor remains on the field, each other allied Aquos gains +75 G's at the end of each of your turns.",
+        "hsp": "8,000 HSP",
         "limit": "2"
     },
     {
@@ -1563,116 +1673,6 @@
         "attribute": "pyrus",
         "description": "Transfer 50 G's from an opposing Bakugan to your Pyrus Griffon, then each other Pyrus Bakugan you control gain +25 G's.",
         "hsp": "1,500 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Aquos 180",
-        "type": "agc",
-        "attribute": "aquos",
-        "description": "Aquos Bakugan present on the Gate Card gain +180 G's.",
-        "hsp": "10,000 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Darkus 180",
-        "type": "agc",
-        "attribute": "darkus",
-        "description": "Darkus Bakugan present on the Gate Card gain +180 G's.",
-        "hsp": "10,000 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Haos 180",
-        "type": "agc",
-        "attribute": "haos",
-        "description": "Haos Bakugan present on the Gate Card gain +180 G's.",
-        "hsp": "10,000 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Pyrus 180",
-        "type": "agc",
-        "attribute": "pyrus",
-        "description": "Pyrus Bakugan present on the Gate Card gain +180 G's.",
-        "hsp": "10,000 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Subterra 180",
-        "type": "agc",
-        "attribute": "subterra",
-        "description": "Bakugan present on the Gate Card gain +180 G's.",
-        "hsp": "10,000 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Ventus 180",
-        "type": "agc",
-        "attribute": "ventus",
-        "description": "Ventus Bakugan present on the Gate Card gain +180 G's.",
-        "hsp": "10,000 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "El Condor Character",
-        "type": "chgc",
-        "description": "El Condor's power level is doubled.",
-        "hsp": "4,000 HSP",
-        "limit": "1"
-    },
-    {
-        "name": "Blessing of Comradery",
-        "type": "sac",
-        "attribute": "haos",
-        "description": "Haos El Condor transfers and splits its G's between up to two allied Bakugan in hand or on the field; if an allied Bakugan returns to hand, El Condor regains the G's transferred; if only one Bakugan is selected, only half of its G's are transferred.",
-        "hsp": "9,000 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Curse of Obsidian",
-        "type": "sac",
-        "attribute": "darkus",
-        "description": "Transfer 50 G's from a diagonal opposing Bakugan to Darkus El Condor; additionally, that Bakugan cannot gain G's until it returns to hand.",
-        "hsp": "7,500 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Dragoon",
-        "type": "sac",
-        "attribute": "subterra",
-        "description": "Subterra El Condor gains G's equal to the current G's of an opposing Bakugan it is in battle with; otherwise, if the last played Ability Card targets El Condor, it gains G's equal to the current G's of that card's caster.",
-        "hsp": "10,000 HSP",
-        "limit": "1"
-    },
-    {
-        "name": "Hot Blast",
-        "type": "sac",
-        "description": " El Condor nullifies the Gate Card it is currently on; then an opposing Bakugan in battle with it loses -50 G's.",
-        "hsp": "2,500 HSP",
-        "limit": "3"
-    },
-    {
-        "name": "Phoenix Burst",
-        "type": "sac",
-        "attribute": "pyrus",
-        "description": "Pyrus El Condor gains G's equal to half of its current G's; if it wins a battle, it permanently gains +50 G's.",
-        "hsp": "7,500 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Solar Plexus",
-        "type": "sac",
-        "attribute": "ventus",
-        "description": "Ventus El Condor is immune to movement from all card effects; while it remains on the field, any opposing Bakugan that moves loses -75 G's, and any allied Bakugan that moves gains +75 G's.",
-        "hsp": "7,500 HSP",
-        "limit": "2"
-    },
-    {
-        "name": "Totemic Tide",
-        "type": "sac",
-        "attribute": "aquos",
-        "description": "Aquos El Condor gains +75 G's; while El Condor remains on the field, each other allied Aquos gains +75 G's at the end of each of your turns.",
-        "hsp": "8,000 HSP",
         "limit": "2"
     }
 ]

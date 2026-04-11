@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDd6QpF-OVMetetP_84agLdy8YJJBchMwI",
-    authDomain: "tacticasbloxugan.firebaseapp.com",
-    projectId: "tacticasbloxugan",
-    storageBucket: "tacticasbloxugan.firebasestorage.app",
-    messagingSenderId: "28253441172",
-    appId: "1:28253441172:web:8917955517a41278c2f881"
+  apiKey: "AIzaSyCay6OyD46e55beIDMhQEfA52s4hFKeqDg",
+  authDomain: "bakutactics-d4dd5.firebaseapp.com",
+  projectId: "bakutactics-d4dd5",
+  storageBucket: "bakutactics-d4dd5.firebasestorage.app",
+  messagingSenderId: "645834778063",
+  appId: "1:645834778063:web:687119a02412c6b502deba"
 };
 
 const app = initializeApp(firebaseConfig);

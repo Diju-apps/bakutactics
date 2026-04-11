@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { db } from '../firebase';
-import { doc, getDoc, setDoc, updateDoc, arrayUnion, collection, getDocs, query, where } from 'firebase/firestore';
-import { Search, Eye, X, Heart, UserPlus, Trophy, Skull, BarChart3, History, Target } from 'lucide-react';
+import { doc, getDoc, setDoc, updateDoc, arrayUnion, collection, getDocs, query, where, onSnapshot, deleteDoc } from 'firebase/firestore';
+import { Search, Eye, X, Heart, UserPlus, Trophy, Skull, BarChart3, History, Target, Sword, Trash2 } from 'lucide-react';
 import type { CardData } from '../utils/cardLogic';
 import cardsData from '../data/cards_es.json';
 import UserAvatar from './UserAvatar';
@@ -78,6 +78,53 @@ export default function Community({ currentUser, onCardClick }: { currentUser: s
     const [loadingUserDecks, setLoadingUserDecks] = useState(false);
     const [selectedUserMatches, setSelectedUserMatches] = useState<Match[]>([]);
     const [profileTab, setProfileTab] = useState<'decks' | 'matches'>('decks');
+
+    const [activeTab, setActiveTab] = useState<'explorar' | 'combates' | 'historial'>('explorar');
+    const [battleHistory, setBattleHistory] = useState<any[]>([]);
+
+    const handleDeleteHistory = async (id: string) => {
+        if (!window.confirm('¿Seguro que quieres eliminar este combate del historial?')) return;
+        try {
+            await deleteDoc(doc(db, 'battle_history', id));
+        } catch (error) {
+            console.error("Error deleting history:", error);
+            alert("No se pudo eliminar el combate.");
+        }
+    };
+
+    useEffect(() => {
+        const q = query(collection(db, 'battle_history'));
+        const unsubscribe = onSnapshot(q, (snap) => {
+            const data = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+            data.sort((a: any, b: any) => {
+                const getMs = (ts: any) => ts?.toMillis ? ts.toMillis() : 0;
+                return getMs(b.createdAt) - getMs(a.createdAt);
+            });
+            setBattleHistory(data);
+        });
+        return () => unsubscribe();
+    }, []);
+
+    const handleChallenge = async (targetUser: string) => {
+        if (!currentUser) return alert('Debes iniciar sesión para lanzar un reto.');
+        if (currentUser.toLowerCase() === targetUser.toLowerCase()) return alert('No puedes retarte a ti mismo.');
+
+        try {
+            const challengeRef = doc(collection(db, 'challenges'));
+            // Usamos Date.now() para un Timestamp rápido, o Firestore Timestamp si está en imports.
+            // setDoc usará el id generado
+            await setDoc(challengeRef, {
+                challenger: currentUser,
+                challenged: targetUser,
+                status: 'pending',
+                createdAt: new Date() 
+            });
+            alert(`¡Reto enviado a @${targetUser}!`);
+        } catch (error) {
+            console.error("Error sending challenge", error);
+            alert("No se pudo enviar el reto.");
+        }
+    };
 
     useEffect(() => {
         const fetchUsers = async () => {
@@ -541,6 +588,31 @@ export default function Community({ currentUser, onCardClick }: { currentUser: s
     return (
         <>
             <div className="animate-fade-in" style={{ paddingBottom: '4rem' }}>
+                
+                {/* Navigation Tabs */}
+                <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                    <button 
+                        onClick={() => setActiveTab('explorar')}
+                        style={{ background: 'transparent', border: 'none', padding: '1rem 0.5rem', color: activeTab === 'explorar' ? 'var(--accent-color)' : 'var(--text-secondary)', fontWeight: 700, cursor: 'pointer', borderBottom: activeTab === 'explorar' ? '2px solid var(--accent-color)' : '2px solid transparent', transition: 'all 0.3s' }}
+                    >
+                        Explorar Peleadores
+                    </button>
+                    <button 
+                        onClick={() => setActiveTab('combates')}
+                        style={{ background: 'transparent', border: 'none', padding: '1rem 0.5rem', color: activeTab === 'combates' ? 'var(--accent-color)' : 'var(--text-secondary)', fontWeight: 700, cursor: 'pointer', borderBottom: activeTab === 'combates' ? '2px solid var(--accent-color)' : '2px solid transparent', transition: 'all 0.3s', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                    >
+                        <Sword size={18} /> Desafiar Peleadores
+                    </button>
+                    <button 
+                        onClick={() => setActiveTab('historial')}
+                        style={{ background: 'transparent', border: 'none', padding: '1rem 0.5rem', color: activeTab === 'historial' ? 'var(--accent-color)' : 'var(--text-secondary)', fontWeight: 700, cursor: 'pointer', borderBottom: activeTab === 'historial' ? '2px solid var(--accent-color)' : '2px solid transparent', transition: 'all 0.3s', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                    >
+                        <History size={18} /> Historial de Combates
+                    </button>
+                </div>
+
+                {activeTab === 'explorar' && (
+                    <>
                 <section className="glass-panel" style={{ padding: '2rem', marginBottom: '2rem' }}>
                     <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 800 }}>Comunidad de Peleadores</h1>
                     <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.1rem', maxWidth: '600px' }}>
@@ -676,6 +748,95 @@ export default function Community({ currentUser, onCardClick }: { currentUser: s
                         );
                     })}
                 </div>
+                    </>
+                )}
+
+                {activeTab === 'combates' && (
+                    <div>
+                        <h2 style={{ marginBottom: '1rem' }}>Desafiar Peleadores</h2>
+                        <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>Selecciona un brawler para enviarle una invitación de combate en tiempo real.</p>
+                        
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
+                            {allUsers.filter(u => u.username.toLowerCase() !== currentUser?.toLowerCase()).map(user => {
+                                const attrColor = user.attribute ? `var(--attr-${user.attribute.toLowerCase()})` : 'var(--accent-color)';
+                                return (
+                                    <div key={user.username} className="glass-panel" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', borderTop: `4px solid ${attrColor}` }}>
+                                        <UserAvatar username={user.username} size={60} overrideAvatar={user.avatar} />
+                                        <h3 style={{ margin: '0.5rem 0 0.2rem 0', fontSize: '1.1rem' }}>@{user.username}</h3>
+                                        <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{user.attribute || 'Novato'}</span>
+                                        <button className="btn-primary" style={{ width: '100%', fontSize: '0.85rem', padding: '0.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.3rem' }} onClick={() => handleChallenge(user.username)}>
+                                            <Sword size={16} /> Retar
+                                        </button>
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                    </div>
+                )}
+
+                {activeTab === 'historial' && (
+                    <div>
+                        <h2 style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}><History size={24} color="var(--accent-color)" /> Historial de Combates</h2>
+                        {battleHistory.length === 0 ? (
+                            <p style={{ color: 'var(--text-secondary)' }}>No hay combates registrados aún.</p>
+                        ) : (
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                {battleHistory.map(b => (
+                                    <div key={b.id} className="glass-panel" style={{ padding: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1.5rem' }}>
+                                        {/* Player 1 */}
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', minWidth: '150px' }}>
+                                            <UserAvatar username={b.player1} size={40} />
+                                            <div>
+                                                <div style={{ fontWeight: 'bold' }}>@{b.player1}</div>
+                                                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>{b.player1Deck?.name || 'Mazo...'}</div>
+                                            </div>
+                                        </div>
+
+                                        {/* Score / VS */}
+                                        <div style={{ textAlign: 'center', flex: 1, minWidth: '150px' }}>
+                                            <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>Set Scores</div>
+                                            <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem' }}>
+                                                {['set1', 'set2', 'set3'].map(setKey => {
+                                                    const winner = b.sets?.[setKey]?.winner;
+                                                    if (!winner) return null;
+                                                    return (
+                                                        <span key={setKey} style={{ background: winner === b.player1 ? 'var(--accent-color)' : '#ef4444', color: '#fff', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 'bold' }}>
+                                                            {winner === b.player1 ? '1' : '2'}
+                                                        </span>
+                                                    );
+                                                })}
+                                            </div>
+                                            <div style={{ marginTop: '0.5rem', fontWeight: 'bold', color: '#10b981' }}>Ganador: @{b.winner}</div>
+                                        </div>
+
+                                        {/* Player 2 */}
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', justifyContent: 'flex-end', minWidth: '150px' }}>
+                                            <div>
+                                                <div style={{ fontWeight: 'bold' }}>@{b.player2}</div>
+                                                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>{b.player2Deck?.name || 'Mazo...'}</div>
+                                            </div>
+                                            <UserAvatar username={b.player2} size={40} />
+                                        </div>
+
+                                        {/* Delete Button for Developer @diju */}
+                                        {currentUser?.toLowerCase() === 'diju' && (
+                                             <button 
+                                                  onClick={() => handleDeleteHistory(b.id)} 
+                                                  style={{ background: 'transparent', border: 'none', color: '#ef4444', cursor: 'pointer', padding: '0.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0.6, transition: 'opacity 0.2s' }}
+                                                  onMouseEnter={e => e.currentTarget.style.opacity = '1'}
+                                                  onMouseLeave={e => e.currentTarget.style.opacity = '0.6'}
+                                                  title="Eliminar del historial"
+                                             >
+                                                  <Trash2 size={18} />
+                                             </button>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                )}
 
             </div>
             {renderUserProfileModal()}

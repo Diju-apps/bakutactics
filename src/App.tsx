@@ -3,7 +3,7 @@ import cardsData from './data/cards_es.json';
 import { analyzeCard, type CardData, type CardAnalysis } from './utils/cardLogic';
 import { Search, X, Shield, Sword, AlertTriangle, MessageCircle, LogOut, Trash2, Edit2, Heart, MessageSquare, Menu, ChevronDown } from 'lucide-react';
 import { db } from './firebase';
-import { doc, getDoc, setDoc, onSnapshot } from 'firebase/firestore';
+import { doc, getDoc, setDoc, onSnapshot, collection, query, where } from 'firebase/firestore';
 import DeckBuilder from './components/DeckBuilder';
 import Community from './components/Community';
 import MetaDecks from './components/MetaDecks';
@@ -16,6 +16,8 @@ import SuperAdminPanel from './components/SuperAdminPanel';
 import BakuganEncyclopedia from './components/BakuganEncyclopedia';
 import BakuTracker from './components/BakuTracker';
 import { getOptimizedImageUrl } from './utils/imageOptimization';
+import ChallengeNotification from './components/ChallengeNotification';
+import BattleArena from './components/BattleArena';
 
 const getCardImageUrl = (card: CardData) => {
     const type = card.type.toLowerCase();
@@ -72,8 +74,11 @@ export default function App() {
   const [showProfileEditor, setShowProfileEditor] = useState(false);
 
   const [visibleCards, setVisibleCards] = useState(24);
-
   const [showDonationModal, setShowDonationModal] = useState(false);
+
+  // Battle & Challenge State
+  const [currentChallenge, setCurrentChallenge] = useState<any | null>(null);
+  const [activeBattleId, setActiveBattleId] = useState<string | null>(null);
 
   useEffect(() => {
     // Attempt loading cards_es. If the script didn't finish, this could error, 
@@ -137,6 +142,43 @@ export default function App() {
       }
     });
     return () => unsubscribe();
+  }, [currentUser]);
+
+  // Listen to Challenges (Challenged & Challenger)
+  useEffect(() => {
+    if (!currentUser) return;
+
+    // Listen to CHALLENGED challenges
+    const queryChallenged = query(
+      collection(db, 'challenges'),
+      where('challenged', '==', currentUser),
+      where('status', '==', 'pending')
+    );
+    const unsub1 = onSnapshot(queryChallenged, (snap) => {
+      if (!snap.empty) {
+        const challenge = snap.docs[0].data();
+        const createdMs = typeof challenge.createdAt?.toMillis === 'function' ? challenge.createdAt.toMillis() : challenge.createdAt;
+        if (Date.now() - createdMs < 300000) { // dentro de 5 minutos
+          setCurrentChallenge({ id: snap.docs[0].id, ...challenge });
+        }
+      } else {
+        setCurrentChallenge(null);
+      }
+    });
+
+    // Listen to CHALLENGER challenges (to detect when other accepts)
+    const queryChallenger = query(
+      collection(db, 'challenges'),
+      where('challenger', '==', currentUser),
+      where('status', '==', 'accepted')
+    );
+    const unsub2 = onSnapshot(queryChallenger, (snap) => {
+      if (!snap.empty && snap.docs[0].data().battleId) {
+        setActiveBattleId(snap.docs[0].data().battleId);
+      }
+    });
+
+    return () => { unsub1(); unsub2(); };
   }, [currentUser]);
 
   const handleAuth = async () => {
@@ -311,15 +353,9 @@ export default function App() {
                 <a href="#decks-populares" className={activeTab === 'meta' && metaTab === 'decks' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveTab('meta'); setMetaTab('decks'); setIsMobileMenuOpen(false); }}>Decks Populares</a>
               </div>
             </div>
+            <a href="#" className={activeTab === 'deckBuilder' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveTab('deckBuilder'); setIsMobileMenuOpen(false); }}>Deck Builder</a>
             <a href="#" className={activeTab === 'tracker' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveTab('tracker'); setIsMobileMenuOpen(false); }}>Registro Partidas</a>
             <a href="#" className={activeTab === 'community' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveTab('community'); setIsMobileMenuOpen(false); }}>Comunidad</a>
-            <a href="#" onClick={(e) => { e.preventDefault(); setShowDonationModal(true); setIsMobileMenuOpen(false); }} style={{ color: "var(--accent-color)", fontWeight: "bold", display: "flex", alignItems: "center", gap: "0.2rem" }}>Donar <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent-color)" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></a>
-            {currentUserRole === 'admin' && (
-              <>
-                <a href="#" className={activeTab === 'bloxuganRegistration' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveTab('bloxuganRegistration'); setIsMobileMenuOpen(false); }}>Registro</a>
-                <a href="#" className={activeTab === 'superAdminPanel' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActiveTab('superAdminPanel'); setIsMobileMenuOpen(false); }}>Panel Admin</a>
-              </>
-            )}
             {currentUser ? (
               <div className="user-actions">
                 <button
@@ -736,7 +772,7 @@ export default function App() {
       {/* Profile Editor */}
       {
         showProfileEditor && currentUser && (
-          <ProfileEditor currentUser={currentUser} onClose={() => setShowProfileEditor(false)} />
+          <ProfileEditor currentUser={currentUser} onClose={() => setShowProfileEditor(false)} onNavigate={(tab: string) => { setActiveTab(tab as any); setShowProfileEditor(false); }} />
         )
       }
 
@@ -777,6 +813,25 @@ export default function App() {
           </div>
         )
       }
+      {/* Challenge Notification */}
+      {currentChallenge && (
+        <ChallengeNotification 
+          challenge={currentChallenge} 
+          onAccept={(battleId) => { setActiveBattleId(battleId); setCurrentChallenge(null); }} 
+          onClose={() => setCurrentChallenge(null)} 
+        />
+      )}
+
+      {/* Battle Arena Overlay */}
+      {activeBattleId && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 12000, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.5rem', overflowY: 'auto' }}>
+          <BattleArena 
+            battleId={activeBattleId} 
+            currentUser={currentUser || ''} 
+            onCancel={() => setActiveBattleId(null)} 
+          />
+        </div>
+      )}
     </>
   );
 }

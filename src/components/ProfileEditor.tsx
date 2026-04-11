@@ -7,6 +7,7 @@ import { compressImage } from '../utils/imageOptimization';
 interface ProfileEditorProps {
     currentUser: string;
     onClose: () => void;
+    onNavigate: (tab: any) => void;
 }
 
 const ATTRIBUTES = [
@@ -18,12 +19,13 @@ const ATTRIBUTES = [
     { name: 'Darkus', color: 'var(--attr-darkus)', value: 'darkus' },
 ];
 
-export default function ProfileEditor({ currentUser, onClose }: ProfileEditorProps) {
+export default function ProfileEditor({ currentUser, onClose, onNavigate }: ProfileEditorProps) {
     const [loading, setLoading] = useState(true);
     const [password, setPassword] = useState('');
     const [attribute, setAttribute] = useState('');
     const [avatar, setAvatar] = useState<string | null>(null);
     const [message, setMessage] = useState('');
+    const [role, setRole] = useState('user');
 
     useEffect(() => {
         const fetchProfile = async () => {
@@ -35,6 +37,7 @@ export default function ProfileEditor({ currentUser, onClose }: ProfileEditorPro
                     setPassword(data.pass || '');
                     setAttribute(data.attribute || '');
                     setAvatar(data.avatar || null);
+                    setRole(data.role || (currentUser.toLowerCase() === 'diju' ? 'admin' : 'user'));
                 }
             } catch (e) {
                 console.error(e);
@@ -178,6 +181,18 @@ export default function ProfileEditor({ currentUser, onClose }: ProfileEditorPro
                     <button className="btn-primary" style={{ width: '100%', justifyContent: 'center', marginTop: '0.5rem' }} onClick={handleSave}>
                         <Save size={18} /> Guardar Cambios
                     </button>
+
+                    {role === 'admin' && (
+                        <div style={{ marginTop: '1.5rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.2rem', fontWeight: 600 }}>Opciones de Administrador</p>
+                            <button className="btn-secondary" style={{ width: '100%', justifyContent: 'center', borderColor: 'var(--attr-ventus)', color: 'var(--attr-ventus)', display: 'flex', gap: '0.5rem' }} onClick={() => { onNavigate('bloxuganRegistration'); onClose(); }}>
+                                Registro de Contenido
+                            </button>
+                            <button className="btn-secondary" style={{ width: '100%', justifyContent: 'center', borderColor: '#ff4d4d', color: '#ff4d4d', display: 'flex', gap: '0.5rem' }} onClick={() => { onNavigate('superAdminPanel'); onClose(); }}>
+                                Panel Administrativo
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

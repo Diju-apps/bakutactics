@@ -1564,5 +1564,115 @@
     "description": "Transfiere 50 G de un Bakugan contrario a tu Pyrus Griffon, luego cada uno de los Pyrus Bakugan que controlas ganan +25 G.",
     "hsp": "1,500 HSP",
     "limit": "2"
+  },
+  {
+    "name": "Aquos 180",
+    "type": "agc",
+    "attribute": "aquos",
+    "description": "Aquos Bakugan presente en la Tarjeta Puerta gana +180 G.",
+    "hsp": "10,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Darkus 180",
+    "type": "agc",
+    "attribute": "darkus",
+    "description": "Darkus Bakugan presente en la Tarjeta Puerta gana +180 G.",
+    "hsp": "10,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Haos 180",
+    "type": "agc",
+    "attribute": "haos",
+    "description": "Haos Bakugan presente en la Tarjeta Puerta gana +180 G.",
+    "hsp": "10,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Pyrus 180",
+    "type": "agc",
+    "attribute": "pyrus",
+    "description": "Pyrus Bakugan presente en la Tarjeta Puerta gana +180 G.",
+    "hsp": "10,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Subterra 180",
+    "type": "agc",
+    "attribute": "subterra",
+    "description": "Bakugan presente en la Tarjeta Puerta gana +180 G.",
+    "hsp": "10,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Ventus 180",
+    "type": "agc",
+    "attribute": "ventus",
+    "description": "Ventus Bakugan presente en la Tarjeta Puerta gana +180 G.",
+    "hsp": "10,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "El Condor Character",
+    "type": "chgc",
+    "description": "El nivel de poder de El Condor se duplica.",
+    "hsp": "4,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Blessing of Comradery",
+    "type": "sac",
+    "attribute": "haos",
+    "description": "Haos El Condor transfiere y divide sus G entre hasta dos Bakugan aliados en la mano o en el campo; si un Bakugan aliado regresa a la mano, El Condor recupera los G transferidos; si solo se selecciona un Bakugan, solo se transfiere la mitad de sus G.",
+    "hsp": "9,000 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Curse of Obsidian",
+    "type": "sac",
+    "attribute": "darkus",
+    "description": "Transfiere 50 G de un Bakugan oponente diagonal a Darkus El Condor; además, ese Bakugan no puede ganar G hasta que regrese de la mano.",
+    "hsp": "7,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Dragoon",
+    "type": "sac",
+    "attribute": "subterra",
+    "description": "Subterra El Condor gana G igual a los G actuales de un Bakugan oponente con el que esté en batalla; de lo contrario, si la última Carta de Habilidad jugada tiene como objetivo a El Condor, gana G igual a los G actuales del lanzador de esa carta.",
+    "hsp": "10,000 HSP",
+    "limit": "1"
+  },
+  {
+    "name": "Hot Blast",
+    "type": "sac",
+    "description": "El Condor anula la Tarjeta Puerta en la que se encuentra actualmente; luego, un Bakugan oponente en batalla con él pierde -50 G.",
+    "hsp": "2,500 HSP",
+    "limit": "3"
+  },
+  {
+    "name": "Phoenix Burst",
+    "type": "sac",
+    "attribute": "pyrus",
+    "description": "Pyrus El Condor gana G igual a la mitad de sus G actuales; si gana una batalla, gana permanentemente +50 G.",
+    "hsp": "7,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Solar Plexus",
+    "type": "sac",
+    "attribute": "ventus",
+    "description": "Ventus El Condor es inmune al movimiento de todos los efectos de las cartas; mientras permanezca en el campo, cualquier Bakugan oponente que se mueva perderá -75 G, y cualquier Bakugan aliado que se mueva ganará +75 G.",
+    "hsp": "7,500 HSP",
+    "limit": "2"
+  },
+  {
+    "name": "Totemic Tide",
+    "type": "sac",
+    "attribute": "aquos",
+    "description": "Aquos El Condor gana +75 G; mientras El Condor permanezca en el campo, todos los demás Aquos aliados ganan +75 G al final de cada uno de tus turnos.",
+    "hsp": "8,000 HSP",
+    "limit": "2"
   }
 ]

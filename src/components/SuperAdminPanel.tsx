@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { db } from '../firebase';
-import { collection, doc, getDocs, updateDoc } from 'firebase/firestore';
-import { Shield, Ban, CheckCircle, ShieldAlert, ShieldCheck } from 'lucide-react';
+import { collection, doc, getDocs, updateDoc, setDoc, writeBatch } from 'firebase/firestore';
+import { Shield, Ban, CheckCircle, ShieldAlert, ShieldCheck, Download, Upload, Database, AlertCircle } from 'lucide-react';
 import UserAvatar from './UserAvatar';
 
 interface UserData {
@@ -82,8 +82,94 @@ export default function SuperAdminPanel({ currentUser }: { currentUser: string }
         }
     };
 
+    const exportData = async () => {
+        if (!window.confirm("¿Deseas exportar una copia de seguridad de toda la base de datos?")) return;
+        setLoading(true);
+        try {
+            const collections = ['users', 'user_decks', 'bloxugans', 'bakugan_comments', 'cards', 'matches', 'battle_history'];
+            const backup: any = {};
+
+            for (const colName of collections) {
+                const querySnapshot = await getDocs(collection(db, colName));
+                backup[colName] = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            }
+
+            const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `bakutactics_backup_${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error("Error exporting data", error);
+            alert("Error al exportar los datos.");
+        }
+        setLoading(false);
+    };
+
+    const importData = async (event: React.ChangeEvent<HTMLInputElement>) => {
+        const file = event.target.files?.[0];
+        if (!file) return;
+
+        if (!window.confirm("¡ATENCIÓN! Esto sobrescribirá los datos existentes. ¿Estás seguro?")) return;
+
+        setLoading(true);
+        const reader = new FileReader();
+        reader.onload = async (e) => {
+            try {
+                const backup = JSON.parse(e.target?.result as string);
+                const collections = Object.keys(backup);
+
+                for (const colName of collections) {
+                    const data = backup[colName];
+                    for (const item of data) {
+                        const { id, ...docData } = item;
+                        await setDoc(doc(db, colName, id), docData);
+                    }
+                }
+                alert("¡Importación completada con éxito!");
+                fetchUsers();
+            } catch (error) {
+                console.error("Error importing data", error);
+                alert("Error al importar el archivo. Formato no válido.");
+            }
+            setLoading(false);
+        };
+        reader.readAsText(file);
+    };
+
     return (
         <div className="container animate-fade-in" style={{ paddingBottom: '4rem' }}>
+            {/* Sección de Backups */}
+            <section className="glass-panel main-section" style={{ marginBottom: '2rem', border: '1px solid rgba(100, 200, 255, 0.2)' }}>
+                <h2 style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: '#64C8FF', marginBottom: '1rem' }}>
+                    <Database size={24} /> 
+                    Gestión de Base de Datos y Backups
+                </h2>
+                <div style={{ background: 'rgba(100, 200, 255, 0.05)', padding: '1rem', borderRadius: '12px', borderLeft: '4px solid #64C8FF', marginBottom: '2rem' }}>
+                    <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <AlertCircle size={16} /> 
+                        Usa estas herramientas para asegurar tus datos. Descarga una copia local regularmente.
+                    </p>
+                </div>
+
+                <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                    <button 
+                        className="btn-primary" 
+                        onClick={exportData}
+                        style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: '#2ecc71', boxShadow: '0 4px 15px rgba(46, 204, 113, 0.2)' }}
+                    >
+                        <Download size={18} /> Exportar Copia de Seguridad (JSON)
+                    </button>
+                    
+                    <label className="btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer', background: 'rgba(255,255,255,0.05)' }}>
+                        <Upload size={18} /> Importar Datos desde Archivo
+                        <input type="file" accept=".json" onChange={importData} style={{ display: 'none' }} />
+                    </label>
+                </div>
+            </section>
+
             <section className="glass-panel main-section" style={{ marginBottom: '2rem' }}>
                 <h1 style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: '#ff4d4d' }}>
                     <ShieldAlert size={32} />
