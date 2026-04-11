@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { db } from '../firebase';
-import { collection, doc, getDocs, updateDoc, setDoc, writeBatch } from 'firebase/firestore';
+import { collection, doc, getDocs, updateDoc, setDoc } from 'firebase/firestore';
 import { Shield, Ban, CheckCircle, ShieldAlert, ShieldCheck, Download, Upload, Database, AlertCircle } from 'lucide-react';
 import UserAvatar from './UserAvatar';
 
