@@ -25,12 +25,6 @@ export const getOptimizedImageUrl = (originalUrl: string | undefined, width: num
         return originalUrl;
     }
 
-    // EXCEPCIÓN: bloxugan.info parece bloquear proxies externos o requiere acceso directo.
-    // Bypass para este dominio para asegurar que las imágenes se vean.
-    if (originalUrl.includes('bloxugan.info')) {
-        return originalUrl;
-    }
-
     // Si es una ruta local o localhost, la devolvemos tal cual
     if (originalUrl.startsWith('/') || originalUrl.includes('localhost')) {
         return originalUrl;

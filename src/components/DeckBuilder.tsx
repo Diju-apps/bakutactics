@@ -487,13 +487,13 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                             <h3 style={{ marginBottom: '1rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem' }}>Bakugans ({viewingDeck.bakugans.filter(b => b.name).length}/3)</h3>
                             <div className="deck-baku-grid">
                                 {viewingDeck.bakugans.map((bk, i) => bk.name && (
-                                    <div key={i} className="glass-panel" style={{ padding: '1rem', borderRadius: '12px', textAlign: 'center', background: 'linear-gradient(145deg, rgba(20,20,28,0.8) 0%, rgba(30,30,40,0.8) 100%)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                                    <div key={i} className="glass-panel" style={{ width: '130px', padding: '0.75rem', borderRadius: '12px', textAlign: 'center', background: 'linear-gradient(145deg, rgba(20,20,28,0.8) 0%, rgba(30,30,40,0.8) 100%)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                                         {bk.imageUrl && (
-                                            <img src={getOptimizedImageUrl(bk.imageUrl, 200)} alt={bk.name} className="w-20 h-20 object-cover rounded-md mx-auto mb-2" style={{ width: '5rem', height: '5rem', objectFit: 'cover', borderRadius: '0.375rem', margin: '0 auto 0.5rem auto' }} />
+                                            <img src={getOptimizedImageUrl(bk.imageUrl, 150)} alt={bk.name} style={{ width: '3.5rem', height: '3.5rem', objectFit: 'cover', borderRadius: '0.375rem', margin: '0 auto 0.4rem auto' }} />
                                         )}
-                                        <div style={{ fontWeight: '800', fontSize: '1.2rem', marginBottom: '0.2rem' }}>{bk.name}</div>
-                                        <div className={`attr-${bk.attribute.toLowerCase()}`} style={{ fontWeight: 600, fontSize: '0.85rem', marginBottom: '0.5rem' }}>{bk.attribute.toUpperCase()}</div>
-                                        <div style={{ background: 'rgba(0,0,0,0.3)', padding: '0.4rem', borderRadius: '8px', fontSize: '1rem', fontWeight: 'bold' }}>{bk.gpower || 0} G</div>
+                                        <div style={{ fontWeight: '800', fontSize: '0.95rem', marginBottom: '0.1rem' }}>{bk.name}</div>
+                                        <div className={`attr-${bk.attribute.toLowerCase()}`} style={{ fontWeight: 600, fontSize: '0.7rem', marginBottom: '0.3rem' }}>{bk.attribute.toUpperCase()}</div>
+                                        <div style={{ background: 'rgba(0,0,0,0.3)', padding: '0.3rem', borderRadius: '6px', fontSize: '0.85rem', fontWeight: 'bold' }}>{bk.gpower || 0} G</div>
                                     </div>
                                 ))}
                                 {viewingDeck.bakugans.filter(b => b.name).length === 0 && <p style={{ color: 'var(--text-secondary)' }}>Sin Bakugans</p>}
@@ -514,7 +514,7 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                                                 style={{ width: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.5)' }}
                                                 onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'https://bloxugan.info/images/card-back.png' }}
                                             />
-                                            <div style={{ marginTop: '0.5rem', fontWeight: 600, fontSize: '0.85rem' }}>{cardName}</div>
+                                            <div style={{ marginTop: '0.35rem', fontWeight: 600, fontSize: '0.7rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{cardName}</div>
                                             <div className="tooltip-text" style={{ textAlign: 'left', fontWeight: 'normal', zIndex: 100 }}>
                                                 <strong style={{ color: 'var(--accent-color)' }}>{cardName}</strong><br />
                                                 <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '4px', display: 'block' }}>{getCardDescription(cardName)}</span>
@@ -540,7 +540,7 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                                                 style={{ width: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.5)' }}
                                                 onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'https://bloxugan.info/images/card-back.png' }}
                                             />
-                                            <div style={{ marginTop: '0.5rem', fontWeight: 600, fontSize: '0.85rem' }}>{cardName}</div>
+                                            <div style={{ marginTop: '0.35rem', fontWeight: 600, fontSize: '0.7rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{cardName}</div>
                                             <div className="tooltip-text" style={{ textAlign: 'left', fontWeight: 'normal', zIndex: 100 }}>
                                                 <strong style={{ color: 'var(--accent-color)' }}>{cardName}</strong><br />
                                                 <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '4px', display: 'block' }}>{getCardDescription(cardName)}</span>
@@ -822,31 +822,34 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                         </div>
 
                         {/* Bakugans Selection */}
-                        <div className="glass-panel" style={{ padding: '1.5rem' }}>
-                            <h3 style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <div className="glass-panel" style={{ padding: '1rem' }}>
+                            <h3 style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                 Equipo Bakugan
                                 <span style={{ fontSize: '0.9rem', fontWeight: 'normal', color: 'var(--text-secondary)' }}>{editingDeck.bakugans.filter(b => b.name).length}/3</span>
                             </h3>
 
-                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+                            <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
                                 {[0, 1, 2].map(i => {
                                     const bk = editingDeck.bakugans[i];
                                     return (
+                                    <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}>
                                         <div 
-                                            key={i} 
                                             style={{ 
                                                 background: bk.name ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.2)', 
                                                 border: bk.name ? '1px solid rgba(255,255,255,0.1)' : '2px dashed rgba(255,255,255,0.2)', 
-                                                borderRadius: '12px', 
-                                                padding: '1.5rem', 
+                                                borderRadius: '50%', 
+                                                padding: '1rem', 
                                                 position: 'relative', 
                                                 display: 'flex', 
                                                 flexDirection: 'column', 
                                                 justifyContent: 'center', 
                                                 alignItems: 'center', 
-                                                minHeight: '200px',
+                                                width: '140px',
+                                                height: '140px',
                                                 cursor: bk.name ? 'default' : 'pointer',
-                                                transition: 'all 0.2s'
+                                                transition: 'all 0.2s',
+                                                boxShadow: 'inset 0 0 20px rgba(0,0,0,0.4), 0 4px 10px rgba(0,0,0,0.3)',
+                                                overflow: 'hidden'
                                             }}
                                             onClick={() => { if (!bk.name) setSelectingBakuganSlot(i); }}
                                             onMouseEnter={e => { if (!bk.name) e.currentTarget.style.borderColor = 'var(--accent-color)' }}
@@ -855,41 +858,46 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                                             {bk.name ? (
                                                 <>
                                                     {bk.imageUrl ? (
-                                                        <LazyImage src={getOptimizedThumbnailUrl(bk.imageUrl)} alt={bk.name} style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: `2px solid var(--accent-color)` }} />
+                                                        <LazyImage src={getOptimizedThumbnailUrl(bk.imageUrl)} alt={bk.name} style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover', marginBottom: '0.5rem', border: `2px solid var(--accent-color)` }} />
                                                     ) : (
-                                                        <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', fontSize: '1.5rem', fontWeight: 'bold' }}>B</div>
+                                                        <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem', fontSize: '1rem', fontWeight: 'bold' }}>B</div>
                                                     )}
-                                                    <h4 style={{ margin: '0 0 0.5rem 0', fontSize: '1.2rem', textAlign: 'center' }}>{bk.name}</h4>
-                                                    <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }}>
-                                                        <span className={`attr-${bk.attribute.toLowerCase()}`} style={{ fontWeight: 'bold', fontSize: '0.85rem', padding: '0.2rem 0.5rem', borderRadius: '4px', background: 'rgba(0,0,0,0.3)' }}>{bk.attribute.toUpperCase()}</span>
-                                                        <span style={{ fontWeight: 'bold', fontSize: '0.85rem', padding: '0.2rem 0.5rem', borderRadius: '4px', background: 'rgba(0,0,0,0.3)' }}>TIER {bk.tier || 'A'}</span>
-                                                        <span style={{ fontWeight: '800', color: '#FFD700', padding: '0.2rem 0.5rem', borderRadius: '4px', background: 'rgba(0,0,0,0.3)' }}>{bk.gpower || 0} G</span>
+                                                    <h4 style={{ margin: '0 0 0.3rem 0', fontSize: '0.85rem', textAlign: 'center', fontWeight: 'bold' }}>{bk.name}</h4>
+                                                    <div style={{ display: 'flex', gap: '0.3rem', marginBottom: '0', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }}>
+                                                        <span className={`attr-${bk.attribute.toLowerCase()}`} style={{ fontWeight: 'bold', fontSize: '0.6rem', padding: '0.1rem 0.3rem', borderRadius: '4px', background: 'rgba(0,0,0,0.3)' }}>{bk.attribute.toUpperCase().substring(0,3)}</span>
+                                                        <span style={{ fontWeight: '800', color: '#FFD700', fontSize: '0.7rem' }}>{bk.gpower || 0}G</span>
                                                     </div>
                                                     <button onClick={(e) => { e.stopPropagation(); removeBakugan(i); }} style={{ position: 'absolute', top: '10px', right: '10px', background: 'rgba(255,0,0,0.2)', color: '#FF4D4D', border: 'none', borderRadius: '50%', width: '30px', height: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', zIndex: 10 }} title="Quitar Bakugan">
                                                         <X size={16} />
                                                     </button>
                                                 </>
                                             ) : (
-                                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', width: '100%' }}>
-                                                    <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)' }}>
-                                                        <Plus size={24} />
-                                                    </div>
-                                                    <button 
-                                                        className="btn-secondary" 
-                                                        style={{ 
-                                                            padding: '0.5rem 1.2rem', 
-                                                            border: '1px solid var(--accent-color)', 
-                                                            color: 'var(--accent-color)', 
-                                                            background: 'rgba(123, 97, 255, 0.1)', 
-                                                            fontWeight: 'bold',
-                                                            pointerEvents: 'none' // Para que el click del contenedor superior sea el que lo capture todo
-                                                        }} 
-                                                    >
-                                                        + Seleccionar
-                                                    </button>
+                                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)' }}>
+                                                    <Plus size={24} />
                                                 </div>
                                             )}
                                         </div>
+                                        {!bk.name && (
+                                            <span 
+                                                style={{ 
+                                                    fontSize: '0.8rem', 
+                                                    color: 'var(--accent-color)', 
+                                                    fontWeight: 'bold', 
+                                                    cursor: 'pointer',
+                                                    padding: '4px 12px',
+                                                    background: 'rgba(123, 97, 255, 0.1)',
+                                                    borderRadius: '20px',
+                                                    border: '1px solid rgba(123, 97, 255, 0.2)',
+                                                    transition: 'all 0.2s'
+                                                }}
+                                                onClick={() => setSelectingBakuganSlot(i)}
+                                                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(123, 97, 255, 0.2)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
+                                                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(123, 97, 255, 0.1)'; e.currentTarget.style.transform = 'translateY(0)'; }}
+                                            >
+                                                + Seleccionar
+                                            </span>
+                                        )}
+                                    </div>
                                     )
                                 })}
                             </div>
@@ -897,14 +905,14 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
 
 
                         {/* Cartas Portal */}
-                        <div className="glass-panel" style={{ padding: '1.5rem' }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+                        <div className="glass-panel" style={{ padding: '0.8rem' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
                                 <h3 style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                                     Cartas Portal ({editingDeck.attributeGates.length + editingDeck.commandGates.length + editingDeck.characterGates.length}/6)
                                 </h3>
                             </div>
 
-                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '1rem' }}>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem', justifyContent: 'center' }}>
                                 {[0, 1, 2, 3, 4, 5].map(i => {
                                     const gateSlotsDef = [
                                         { type: 'attribute', label: 'Atributo' },
@@ -928,6 +936,7 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                                                 key={i} 
                                                 className="glass-panel tooltip-container"
                                                 style={{ 
+                                                    width: '74px',
                                                     aspectRatio: '2.5/3.5',
                                                     borderRadius: '8px', 
                                                     display: 'flex', 
@@ -967,6 +976,7 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                                                 key={i} 
                                                 className="glass-panel"
                                                 style={{ 
+                                                    width: '74px',
                                                     aspectRatio: '2.5/3.5',
                                                     background: 'rgba(0,0,0,0.2)', 
                                                     border: '2px dashed rgba(255,255,255,0.2)', 
@@ -984,11 +994,11 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                                                 onMouseEnter={e => e.currentTarget.style.borderColor = 'var(--accent-color)'}
                                                 onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'}
                                             >
-                                                <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)' }}>
-                                                    <Plus size={20} />
+                                                <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.5)' }}>
+                                                    <Plus size={18} />
                                                 </div>
-                                                <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                                                    + {slotDef.label}
+                                                <span style={{ color: 'var(--text-secondary)', fontSize: '0.6rem', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                                                    {slotDef.label}
                                                 </span>
                                             </div>
                                         );
@@ -998,14 +1008,14 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                         </div>
 
                         {/* Cartas de Habilidad Selection */}
-                        <div className="glass-panel" style={{ padding: '1.5rem' }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+                        <div className="glass-panel" style={{ padding: '0.8rem' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
                                 <h3 style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                                     Cartas de Habilidad ({editingDeck.abilities.length}/10)
                                 </h3>
                             </div>
                             
-                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '1rem' }}>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem', justifyContent: 'center' }}>
                                 {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => {
                                     const c = editingDeck.abilities[i];
 
@@ -1016,6 +1026,7 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                                                 key={i} 
                                                 className="glass-panel tooltip-container"
                                                 style={{ 
+                                                    width: '74px',
                                                     aspectRatio: '2.5/3.5',
                                                     borderRadius: '8px', 
                                                     display: 'flex', 
@@ -1054,6 +1065,7 @@ export default function DeckBuilder({ currentUser, onCardClick }: Props) {
                                                 key={i} 
                                                 className="glass-panel"
                                                 style={{ 
+                                                    width: '74px',
                                                     aspectRatio: '2.5/3.5',
                                                     background: 'rgba(0,0,0,0.2)', 
                                                     border: '2px dashed rgba(255,255,255,0.2)', 
